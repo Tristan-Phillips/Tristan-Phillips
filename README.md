@@ -1,7 +1,3 @@
-<div align="right">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=T.T&"  />
-</div>
-
 ###
 
 <h1 align="center">Hello👋, My name is Tristan I am from South Africa</h1>
