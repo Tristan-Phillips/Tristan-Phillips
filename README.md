@@ -2,15 +2,6 @@
 
 <h1 align="center">Hello👋, My name is Tristan I am from South Africa</h1>
 
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=gotham&locale=en&hide_border=false&username=Tristan-Phillips" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=chartreuse-dark&hide_border=false&username=T" height="150" alt="languages graph"  />
-</div>
-
-###
-
 <h3 align="left">I am currently learning</h3>
 
 ###
@@ -37,9 +28,6 @@
   </a>
   <a href="https://t.me/tristanphillips" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="52" height="40" alt="telegram logo"  />
-  </a>
-  <a href="https://codepen.io/tristan-phillips" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/codepen/default.svg" width="52" height="40" alt="codepen logo"  />
   </a>
 </div>
 
