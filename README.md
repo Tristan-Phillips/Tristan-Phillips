@@ -18,6 +18,6 @@
   </div>
   <div>
     <h3 align="left">My Gitbook</h3>
-    <img src="https://www.gitbook.com/public/fullLogo-primary.svg" height="32" width="146" alt="gitbook logo">
+    <a href="https://docs.tristanphillips.dev/landing-page/"><img src="https://www.gitbook.com/public/fullLogo-primary.svg" height="32" width="146" alt="gitbook logo"></a>
   </div>
 </div>
