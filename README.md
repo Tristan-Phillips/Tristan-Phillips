@@ -44,8 +44,6 @@
   <div>
     <h3 align="left">My Gitbook</h3>
     <a href="https://docs.tristanphillips.xyz/landing-page/"><img src="https://www.gitbook.com/public/fullLogo-primary.svg" height="32" width="146" alt="gitbook logo"></a>
-    <h3 align="left">My Personal Blog <sub>(NSFW)</sub> </h3>
-    <a href="https://blog.tristanphillips.xyz//"><img align="left" src="https://blog.tristanphillips.xyz/wp-content/uploads/2023/02/amananime.png" height="40" width="40" alt="Blog"/></a>
     </div>
   </div>
 </div>
