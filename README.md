@@ -15,6 +15,11 @@
   <li><a href="https://me.paintedd.art">Painted d</a></li>
 </ul>
 
+<h6>Study Notes</h6>
+<ul>
+  <li><a href="https://unisa.trap.lol">UNISA</a></li>
+</ul>
+
 <h6>Contact</h6>
 <ul>
   <li><a href="https://discord.gg/xMqKGg8AeY">Discord</a></li>  
