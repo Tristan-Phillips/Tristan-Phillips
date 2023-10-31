@@ -23,4 +23,5 @@
 <h6>Contact</h6>
 <ul>
   <li><a href="https://discord.gg/xMqKGg8AeY">Discord</a></li>  
+  <li><a rel="me" href="https://mastodon.africa/@traplol">Mastodon</a></li>
 </ul>
