@@ -15,9 +15,10 @@
   <li><a href="https://me.paintedd.art">Painted d</a></li>
 </ul>
 
-<h6>Study Notes</h6>
+<h6>Notes</h6>
 <ul>
   <li><a href="https://unisa.trap.lol">UNISA</a></li>
+  <li><a href="https://knowledge.trap.lol">Public notes</li>
 </ul>
 
 <h6>Contact</h6>
