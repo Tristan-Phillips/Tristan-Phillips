@@ -1,6 +1,6 @@
 <h1 align="center">Hello👋</h1>
 
-<p>I'm Tristan Phillips - I usually dont know what I am doing</p>
+<p>I'm Tristan Phillips</p>
 
 <h6>Personal Links</h6>
 <ul>
