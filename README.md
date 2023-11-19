@@ -18,7 +18,7 @@
 <h6>Notes</h6>
 <ul>
   <li><a href="https://unisa.trap.lol">UNISA</a></li>
-  <li><a href="https://knowledge.trap.lol">Public notes</li>
+  <li><a href="https://knowledge.trap.lol">Public notes</a></li>
 </ul>
 
 <h6>Contact</h6>
