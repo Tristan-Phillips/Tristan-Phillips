@@ -28,4 +28,4 @@
 </ul>
 
 <!-- For verification purposes -->
-<a rel="me" href="https://mastodon.africa/@traplol"></a>
+<a rel="me" href="https://social.trap.lol/@tristan"></a>
