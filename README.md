@@ -19,7 +19,7 @@
 <ul>
   <li><a href="https://url.trap.lol/unisa">UNISA</a></li>
   <li><a href="https://url.trap.lol/knowledge">Public notes</a></li>
-  <li><a href="https://url.trap.lol/paste">Pastebin</li>
+  <li><a href="https://url.trap.lol/paste">Pastebin</a></li>
 </ul>
 
 <h6>Game Servers</h6>
