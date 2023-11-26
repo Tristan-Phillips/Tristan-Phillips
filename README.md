@@ -31,6 +31,7 @@
 <ul>
   <li><a href="https://url.trap.lol/discord">Discord</a></li>  
   <li><a href="https://url.trap.lol/mastadon">Mastodon</a></li>
+  <li><a href="https://url.trap.lol/steam">Steam</a></li>
 </ul>
 
 <!-- For verification purposes -->
