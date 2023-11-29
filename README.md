@@ -24,7 +24,7 @@
 
 <h6>Game Servers</h6>
 <ul>
-  <li><a href="https://url.trap.lol/mc">Minecraft Vanilla</a></li>
+  <li><a href="https://mc.trap.lol">Minecraft Vanilla</a></li>
 </ul>
 
 <h6>Contact</h6>
