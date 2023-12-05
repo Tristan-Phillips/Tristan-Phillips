@@ -1,7 +1,5 @@
 <h1 align="center">Hello👋</h1>
 
-<p>I'm Tristan Phillips</p>
-
 <h6>Personal Links</h6>
 <ul>
   <li><a href="https://url.trap.lol/github">Github</a></li>
