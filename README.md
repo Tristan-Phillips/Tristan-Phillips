@@ -11,6 +11,7 @@
 <h6>Business Links</h6>
 <ul>
   <li><a href="https://url.trap.lol/paintedd">Painted d</a></li>
+  <li><a href="https://url.trap.lol/codes">Trap Codes</a> (Under Construction)</li>
 </ul>
 
 <h6>Notes</h6>
