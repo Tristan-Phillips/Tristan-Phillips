@@ -21,16 +21,23 @@
   <li><a href="https://url.trap.lol/paste">Pastebin</a></li>
 </ul>
 
-<h6>Game Servers</h6>
-<ul>
-  <li><a href="https://mc.trap.lol">Minecraft Vanilla</a></li>
-</ul>
-
 <h6>Contact</h6>
 <ul>
   <li><a href="https://url.trap.lol/discord">Discord</a></li>  
   <li><a href="https://url.trap.lol/mastadon">Mastodon</a></li>
-  <li><a href="https://url.trap.lol/steam">Steam</a></li>
+</ul>
+
+<h6>Game</h6>
+<ul>
+  <h6>Servers</h6>
+  <ul>
+    <li><a href="https://mc.trap.lol">Minecraft Vanilla</a></li>
+  </ul>
+  <h6>Profiles</h6>
+  <ul>
+    <li><a href="https://url.trap.lol/steam">Steam</li>
+    <li><a href="https://url.trap.lol/xbox">Xbox</li>
+  </ul>
 </ul>
 
 <!-- For verification purposes -->
