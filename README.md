@@ -35,8 +35,8 @@
   </ul>
   <h6>Profiles</h6>
   <ul>
-    <li><a href="https://url.trap.lol/steam">Steam</li>
-    <li><a href="https://url.trap.lol/xbox">Xbox</li>
+    <li><a href="https://url.trap.lol/steam">Steam</a></li>
+    <li><a href="https://url.trap.lol/xbox">Xbox</a></li>
   </ul>
 </ul>
 
