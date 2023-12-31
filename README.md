@@ -1,6 +1,7 @@
 <h1 align="center">Hello👋</h1>
 
 <h6>Personal Links</h6>
+<p>[Most empty or wip]</p>
 <ul>
   <li><a href="https://url.trap.lol/github">Github</a></li>
   <li><a href="https://url.trap.lol/youtube">YouTube</a></li>
@@ -11,7 +12,7 @@
 <h6>Business Links</h6>
 <ul>
   <li><a href="https://url.trap.lol/paintedd">Painted d</a></li>
-  <li><a href="https://url.trap.lol/codes">Trap Codes</a> (Under Construction)</li>
+  <!--<li><a href="https://url.trap.lol/codes">Trap Codes</a> (Under Construction)</li>-->
 </ul>
 
 <h6>Notes</h6>
@@ -25,6 +26,7 @@
 <ul>
   <li><a href="https://url.trap.lol/discord">Discord</a></li>  
   <li><a href="https://url.trap.lol/mastadon">Mastodon</a></li>
+  <li><a href="https://www.reddit.com/user/trap_l0l">Reddit</a></li>
 </ul>
 
 <h6>Game</h6>
@@ -40,5 +42,6 @@
   </ul>
 </ul>
 
+<p>I guess this is a personal doxxing</p>
 <!-- For verification purposes -->
 <a rel="me" href="https://social.trap.lol/@tristan"></a>
