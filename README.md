@@ -12,7 +12,7 @@
 
 <h2>Note Projects</h2>
 <ul>
-  <li><a href="https://url.trap.lol/unisa">UNISA</a> - Computer Science notes for <a href="https://url.trap.lol/98906">98906</a> at UNISA</li>
+  <li><a href="https://url.trap.lol/unisa">Computer Science</a> - Computer Science notes for <a href="https://url.trap.lol/98906">98906</a> at UNISA</li>
   <li><a href="https://url.trap.lol/knowledge">Public notes</a> - A knowledge base so I can remember things</li>
   <li><a href="https://url.trap.lol/cw">Creative Writing</a> - Arts in Creative Writing notes for <a href="https://url.trap.lol/99313">99313</a> at UNISA</li>
   <li><a href="https://url.trap.lol/psychology">Psychology Notes</a> - Arts in Psychology notes for <a href="https://url.trap.lol/90180">90180</a> at UNISA</li>
