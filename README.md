@@ -14,8 +14,6 @@
 <ul>
   <li><a href="https://url.trap.lol/unisa" target="_blank">Computer Science</a> - Computer Science notes for <a href="https://url.trap.lol/98906" target="_blank">98906</a> at UNISA</li>
   <li><a href="https://url.trap.lol/knowledge" target="_blank">Public notes</a> - A knowledge base so I can remember things</li>
-  <li><a href="https://url.trap.lol/cw" target="_blank">Creative Writing</a> - Arts in Creative Writing notes for <a href="https://url.trap.lol/99313" target="_blank">99313</a> at UNISA</li>
-  <li><a href="https://url.trap.lol/psychology" target="_blank">Psychology Notes</a> - Arts in Psychology notes for <a href="https://url.trap.lol/90180" target="_blank">90180</a> at UNISA</li>
   <li><a href="https://url.trap.lol/paste" target="_blank">Pastebin Notes</a> - Quick notes using <a href="https://gist.github.com/">Github Gist</a></li>
 </ul>
 
