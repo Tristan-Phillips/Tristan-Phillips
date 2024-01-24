@@ -2,19 +2,18 @@
 
 <h6>Personal Links</h6>
 <p style="color: #FF0000;">These projects are mostly empty, they are all works in progeress</p>
+
+<h2>Note Projects</h2>
+<ul>
+  <li><a href="https://url.trap.lol/knowledge" target="_blank">Public notes</a> - A knowledge base so I can remember things</li>
+</ul>
+
 <h2> Social Media Links</h2>
 <ul>
   <li><a href="https://url.trap.lol/github" target="_blank">Github</a> - Code projects</li>
   <li><a href="https://url.trap.lol/youtube" target="_blank">YouTube</a> - Random content</li>
   <li><a href="https://url.trap.lol/blog" target="_blank">Blog</a> - Just having fun, to be comfortable with sharing my thoughts</li>
   <li><a href="https://url.trap.lol/kofi" target="_blank">Ko-Fi</a> - Because why not</li>
-</ul>
-
-<h2>Note Projects</h2>
-<ul>
-  <li><a href="https://url.trap.lol/unisa" target="_blank">Computer Science</a> - Computer Science notes for <a href="https://url.trap.lol/98906" target="_blank">98906</a> at UNISA</li>
-  <li><a href="https://url.trap.lol/knowledge" target="_blank">Public notes</a> - A knowledge base so I can remember things</li>
-  <li><a href="https://url.trap.lol/paste" target="_blank">Pastebin Notes</a> - Quick notes using <a href="https://gist.github.com/">Github Gist</a></li>
 </ul>
 
 <h2>Contact Me</h2>
