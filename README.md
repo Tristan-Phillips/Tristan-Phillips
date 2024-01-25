@@ -11,8 +11,7 @@
 
 <h2> Social Media Links</h2>
 <ul>
-  <li><a href="https://url.trap.lol/mastadon" target="_blank">Mastodon</a> - View my short public chats and interests</li>
-  <li><a href="https://url.trap.lol/discord" target="_blank">Discord</a> - You can join my discord server</li>  
+  <li><a href="https://url.trap.lol/mastadon" target="_blank">Mastodon</a> - View my short public chats and interests</li> 
 </ul>
 
 <h2>Thoughts</h2>
