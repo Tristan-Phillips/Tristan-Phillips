@@ -1,6 +1,9 @@
 <h1 align="center">TRAP.LOL : Hello👋</h1>
 
 <h6>Personal Links</h6>
+<ul>
+  <li><a href="https://url.trap.lol/cv">CV</a></li>
+</ul>
 
 <h2>Notes && Projects</h2>
 <p style="color: #FF0000;">These projects are mostly empty, they are all works in progeress</p>
