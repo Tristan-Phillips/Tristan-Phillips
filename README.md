@@ -5,6 +5,7 @@
 <ul>
   <li><a href="https://url.trap.lol/knowledge" target="_blank">Public notes</a> - A knowledge base so I can remember things</li>
   <li><a href="https://url.trap.lol/github" target="_blank">Github</a> - Code projects</li>
+  <li><a href="https://url.trap.lol/book">Psychology</a> - Notes about psychology</li>
 </ul>
 
 <h2> Social Media Links</h2>
