@@ -7,10 +7,12 @@
   <li><a href="https://url.trap.lol/github" target="_blank">Github</a> - Code projects</li>
 </ul>
 
+<!-- 
 <h2> Social Media Links</h2>
 <ul>
   <li><a href="https://url.trap.lol/mastadon" target="_blank">Mastodon</a> - View my short public chats and interests</li> 
 </ul>
+-->
 
 <h2>Thoughts</h2>
 <ul>
