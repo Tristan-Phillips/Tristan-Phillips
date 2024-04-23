@@ -7,12 +7,16 @@
   <li><a href="https://url.trap.lol/github" target="_blank">Github</a> - Code projects</li>
 </ul>
 
-<!-- 
 <h2> Social Media Links</h2>
-<ul>
+<!-- <ul>
   <li><a href="https://url.trap.lol/mastadon" target="_blank">Mastodon</a> - View my short public chats and interests</li> 
+</ul> -->
+<ul>
+  <li><a href="https://url.trap.lol/tiktok" target="_blank">TikTok</a> - Shorts</li>
 </ul>
--->
+<ul>
+  <li><a href="https://url.trap.lol/youtube" target="_blank">YouTube</a> - Videos</li>
+</ul>
 
 <h2>Thoughts</h2>
 <ul>
