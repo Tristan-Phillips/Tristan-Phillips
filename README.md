@@ -5,7 +5,6 @@
 <ul>
   <li><a href="https://url.trap.lol/knowledge" target="_blank">Public notes</a> - A knowledge base so I can remember things</li>
   <li><a href="https://url.trap.lol/github" target="_blank">Github</a> - Code projects</li>
-  <li><a href="https://url.trap.lol/book">Book</a> - Detailed Notes</li>
 </ul>
 
 <h2> Social Media Links</h2>
@@ -16,11 +15,6 @@
 <h2>Thoughts</h2>
 <ul>
   <li><a href="https://url.trap.lol/blog" target="_blank">Blog</a> - To get comfortable with sharing my thoughts</li>
-</ul>
-
-<h2>Game</h2>
-<ul>
-  <li><a href="https://mc.trap.lol" target="_blank">Minecraft Vanilla</a></li>
 </ul>
 
 <p>A personal doxxing</p>
