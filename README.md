@@ -11,8 +11,11 @@
 <!-- <ul>
   <li><a href="https://url.trap.lol/mastadon" target="_blank">Mastodon</a> - View my short public chats and interests</li> 
 </ul> -->
-<ul>
+<!-- <ul>
   <li><a href="https://url.trap.lol/tiktok" target="_blank">TikTok</a> - Shorts</li>
+</ul> -->
+<ul>
+  <li><a href="https://mastodon.africa/@traplol" target="_blank">Mastodon</a> - Toots</li>
 </ul>
 <ul>
   <li><a href="https://url.trap.lol/youtube" target="_blank">YouTube</a> - Videos</li>
