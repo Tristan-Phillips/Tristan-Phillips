@@ -4,7 +4,6 @@
 <p style="color: #FF0000;">These projects are mostly empty, they are all works in progeress</p>
 <ul>
   <li><a href="https://url.trap.lol/knowledge" target="_blank">Public notes</a> - A knowledge base so I can remember things</li>
-  <li><a href="https://url.trap.lol/compsci">CompSci Notes</a> - 98906 Unisa notes</li>
   <li><a href="https://url.trap.lol/github" target="_blank">Github</a> - Code projects</li>
 </ul>
 
