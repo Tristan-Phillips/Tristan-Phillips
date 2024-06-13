@@ -1,0 +1,5 @@
+baseURL = 'https://trap.lol/www/98906/'
+languageCode = 'en-us'
+title = 'UNISA - Computer Science'
+theme = "hugo-book"
+BookMenuBundle = "/menu"
