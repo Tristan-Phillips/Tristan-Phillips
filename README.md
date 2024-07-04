@@ -1,16 +1,27 @@
-## Hi there 👋
+<h1 align="center">TRAP.LOL : Hello👋</h1>
 
-<!--
-**Tristan-Phillips/Tristan-Phillips** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h2>Notes && Projects</h2>
+<p style="color: #FF0000;">These projects are mostly empty, they are all works in progeress</p>
+<ul>
+  <li><a href="https://url.trap.lol/knowledge" target="_blank">Public notes</a> - A knowledge base so I can remember things</li>
+</ul>
 
-Here are some ideas to get you started:
+<h2> Social Media Links</h2>
+<ul>
+  <li><a href="https://url.trap.lol/mastodon" target="_blank">Mastodon</a> - Toots</li>
+</ul>
+<ul>
+  <li><a href="https://url.trap.lol/youtube" target="_blank">YouTube</a> - Videos</li>
+</ul>
+<ul>
+  <li><a href="https://url.trap.lol/github" target="_blank">Github</a> - Code projects</li>
+</ul>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<h2>Thoughts</h2>
+<ul>
+  <li><a href="https://url.trap.lol/blog" target="_blank">Blog</a> - To get comfortable with sharing my thoughts</li>
+</ul>
+
+<p>A personal doxxing</p>
+<!-- For verification purposes -->
+<a rel="me" href="https://mastodon.africa/@traplol"></a>
