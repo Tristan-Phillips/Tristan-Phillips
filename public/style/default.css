@@ -1,0 +1,55 @@
+/* Variables */
+
+:root {
+    --primary-color-green: #B1FF9F;
+    --primary-color-purple: #F1A9FF;
+    --primary-color-black: #0C0910;
+    --primary-text-black: #000;
+    --primary-text-white: #fff;
+    --secondary-color-purple: #73648A;
+    --tertiary-color-purple: #453750;
+}
+
+/* end of Variables */ 
+
+/* Body Style */
+
+body {
+    padding: 0;
+    background: linear-gradient(90deg, var(--secondary-color-purple), var(--tertiary-color-purple));
+    color: var(--primary-text-black);
+    height: 10000px; /*Temp*/
+}
+
+/* end of Body Style */
+
+/* Header Style */
+
+header {
+    position: sticky;
+    top: 10px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    display: inline-block;
+    background-color: var(--primary-color-black);
+    color: var(--primary-text-white);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px var(--secondary-color-purple);
+}
+
+/* end of Header Style */
+
+/* Profile Picture Style */
+/* end of Profile Picture Style */
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #navigation-top ul {
+        flex-direction: column; /* Align li vertically */
+    }
+} 
