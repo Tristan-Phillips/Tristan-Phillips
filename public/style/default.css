@@ -31,25 +31,17 @@ header {
 }
 
 header h1 {
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color-black);
+    box-shadow: 0 2px 5px var(--secondary-color-purple);
+    color: var(--primary-text-white);
+
     font-size: 1.5em;
     font-weight: 400;
-    display: inline-block;
-    background-color: var(--primary-color-black);
-    color: var(--primary-text-white);
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin: 10px;
-    box-shadow: 0 2px 5px var(--secondary-color-purple);
 }
 
 /* end of Header Style */
-
-/* Profile Picture Style */
-/* end of Profile Picture Style */
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    #navigation-top ul {
-        flex-direction: column; /* Align li vertically */
-    }
-} 
