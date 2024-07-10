@@ -25,12 +25,12 @@ body {
 
 /* Header Style */
 
-header {
+#banner-top-foreground {
     position: sticky;
     top: 10px;
 }
 
-header h1 {
+#banner-top-foreground h1 {
     display: inline-block;
     position: absolute;
     right: 100px;
@@ -42,6 +42,32 @@ header h1 {
 
     font-size: 1.5em;
     font-weight: 400;
+}
+
+#banner-top-background {
+    position: relative;
+    display: inline-block;
+}
+
+#banner-top-background img{
+    top: 10px;
+    left: 100px;
+    width: auto;
+    height: 90vh;
+    border-radius: 50%;
+    background-color: var(--primary-color-green);
+    box-shadow: 0 2px 5px var(--secondary-color-purple);
+}
+#banner-top-background-imgoverlay {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1;
 }
 
 /* end of Header Style */
