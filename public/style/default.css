@@ -16,7 +16,7 @@
 
 body {
     display: flex;
-    background: linear-gradient(180deg, var(--primary-color-purple), var(--secondary-color-purple));
+    background:linear-gradient(180deg,var(--secondary-color-purple),var(--tertiary-color-purple));
     height: 100vh;
 }
 
