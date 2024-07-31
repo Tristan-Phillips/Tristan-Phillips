@@ -172,3 +172,60 @@ main {
     }
     .marquee:before, .marquee:after { width: 5rem; }
   }
+
+main a {
+    text-decoration: none;
+}
+
+.card:first-child:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: var(--primary-color-green) 0px 0px 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: var(--primary-color-black);
+    color: var(--primary-color-green);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card .card-left h3 {
+    color: var(--primary-color-green);
+    margin-bottom: 0;
+}
+
+.card .card-left sub {
+    color: var(--primary-color-purple);
+    margin: 0;
+    padding: 0;
+}
+
+.card ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.card ul i {
+    margin: 0.5rem;
+}
+
+.card ul li {
+    margin: 0.5rem;
+}
+
+.card ul a {
+    color: var(--primary-color-green);
+}
+
+.card ul a:hover {
+    color: var(--primary-color-purple);
+}
