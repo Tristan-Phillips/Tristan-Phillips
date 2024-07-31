@@ -301,3 +301,30 @@ main a {
     background: var(--primary-color-black);
     transform: rotate(0deg);
   }
+
+.dashboard {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--primary-color-black);
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: var(--primary-color-green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.dashboard a:hover {
+    color: var(--primary-color-purple);
+    transition: color 0.3s ease-in-out;
+}
