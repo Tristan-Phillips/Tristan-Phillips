@@ -22,8 +22,9 @@
 
 body {
     background-color: var(--tertiary-color-purple);
-    height: 100vh;
+
     margin: 0;
+    padding: 0;
 }
 
 /* end of Body Style */
@@ -109,7 +110,7 @@ main {
     overflow: hidden;
     position: absolute;
     bottom: 0;
-  }
+}
   
 .marquee:before, .marquee:after {
     position: absolute;
@@ -327,4 +328,58 @@ main a {
 .dashboard a:hover {
     color: var(--primary-color-purple);
     transition: color 0.3s ease-in-out;
+}
+
+.projects h3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color-green);
+    font-size: 2rem;
+}
+
+.projects {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.project-slider {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+.project {
+    background-color: var(--primary-color-black);
+    color: var(--primary-color-green);
+    border-radius: 5px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    width: 20vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project i{
+    color: var(--primary-color-green);
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: var(--primary-color-green) 0px 0px 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--primary-color-green);
+}
+
+.project-slider a {
+    text-decoration: none;
 }
