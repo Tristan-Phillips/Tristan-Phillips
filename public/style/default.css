@@ -22,7 +22,6 @@
 
 body {
     background-color: var(--tertiary-color-purple);
-
     margin: 0;
     padding: 0;
 }
@@ -76,7 +75,6 @@ header .badge a:hover {
 header .namewslogan {
     margin: 1rem;
     padding: 1rem;
-    background-color: var(--primary-color-black);
     color: var(--primary-color-green);
     border-radius: 30px;
 }
@@ -108,8 +106,6 @@ main {
     background-color: #111;
     color: var(--primary-color-green);
     overflow: hidden;
-    /* position: absolute;
-    bottom: 0; */
 }
   
 .marquee:before, .marquee:after {
