@@ -183,6 +183,12 @@ main a {
     box-shadow: var(--primary-color-green) 0px 0px 10px;
 }
 
+.card.hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: var(--primary-color-green) 0px 0px 10px;
+}
+
 .card {
     display: flex;
     flex-direction: row;
@@ -228,4 +234,28 @@ main a {
 
 .card ul a:hover {
     color: var(--primary-color-purple);
+}
+
+.oneLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.oneLine a {
+    color: var(--primary-color-green);
+}
+
+.namewslogan:hover a{
+    scale: 1.1;
+    transition: scale 0.3s ease-in-out;
+}
+
+.namewslogan a:hover {
+    color: var(--primary-color-purple);
+}
+
+.badge:hover a{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
