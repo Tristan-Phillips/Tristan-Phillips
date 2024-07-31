@@ -108,8 +108,8 @@ main {
     background-color: #111;
     color: var(--primary-color-green);
     overflow: hidden;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
   
 .marquee:before, .marquee:after {
@@ -382,4 +382,10 @@ main a {
 
 .project-slider a {
     text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
