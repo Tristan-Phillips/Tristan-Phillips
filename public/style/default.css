@@ -60,3 +60,14 @@ header .badge a{
     position: absolute;
     bottom: 0;
 }
+
+header .badge a:hover {
+    color: var(--primary-color-purple);
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
