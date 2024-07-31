@@ -382,6 +382,14 @@ main a {
 
 footer {
     width: 100%;
-    position: relative;
+    position: relative; /* Default position */
     bottom: 0;
+}
+
+/* Media query for larger screens */
+@media (min-height: 1080px) { /* Adjust the breakpoint as needed */
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
 }
