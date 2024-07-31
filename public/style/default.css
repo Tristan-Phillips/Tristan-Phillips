@@ -105,7 +105,7 @@ main {
 .marquee {
     width: var(--marquee-width);
     background-color: #111;
-    color: #eee;
+    color: var(--primary-color-green);
     overflow: hidden;
     position: absolute;
     bottom: 0;
