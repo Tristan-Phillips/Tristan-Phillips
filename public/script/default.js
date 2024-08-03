@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Display element not found');
                 return;
             }
-            displayElement.textContent = `${projectCount} `;
+            displayElement.textContent = `${projectCount} projects`;
         })
         .catch(error => {
             console.error('Error fetching or parsing other.html:', error);
