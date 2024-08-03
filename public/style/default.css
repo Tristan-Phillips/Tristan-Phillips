@@ -397,3 +397,85 @@ footer {
         bottom: 0;
     }
 }
+
+/*Frontend.html*/
+
+#listpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--tertiary-color-purple);
+}
+
+#listpage .projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: var(--tertiary-color-purple);
+}
+
+#listpage .project{
+    display: flex;
+    position: relative;
+    width: 80vw;
+    max-width: 800px;
+}
+
+#listpage .github{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+#listpage .github.dark {
+    color: var(--primary-color-black);
+}
+
+#listpage .languages {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#listpage .title {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    background-color: var(--primary-color-black);
+    color: var(--primary-color-green);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#listpage .title h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#listpage .title a {
+    text-decoration: none;
+    color: var(--primary-color-green);
+}
+
+#listpage .languages li {
+    list-style: none;
+    margin: 0.5rem;
+}
+
+#listpage .languages i {
+    position: inherit;
+}
+
+#listpage img {
+    width: 100%;
+    border: 2px solid var(--primary-color-green);
+    box-shadow: 0 0 10px var(--primary-color-green);
+}
