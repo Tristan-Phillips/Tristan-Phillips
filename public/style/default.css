@@ -138,10 +138,10 @@ main {
   /* .marquee-content:hover {
     animation-play-state: paused;
   } */
-  /* @keyframes scrolling {
+  @keyframes scrolling {
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
-  } */
+  }
   
 .marquee-content li {
     display: flex;
@@ -504,7 +504,6 @@ footer {
 }
 
 li a p {
-    position: absolute;
     top: 0;
     font-size: 0.5rem;
     color: var(--primary-notification-color);

@@ -4,6 +4,14 @@ const marqueeContent = document.querySelector("ul.marquee-content");
 
 root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 
+marqueeContent.addEventListener('mouseover', function() {
+    marqueeContent.style.animationPlayState = 'paused';
+});
+
+marqueeContent.addEventListener('mouseout', function() {
+    marqueeContent.style.animationPlayState = 'running';
+});
+
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
@@ -85,34 +93,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 );
 
-document.addEventListener("DOMContentLoaded", function() {
-    async function fetchAndCountLinks(url) {
-      try {
-        console.log(`Fetching URL: ${url}`);
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error(`Network response was not ok: ${response.status}`);
-        }
-        const text = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(text, 'text/html');
-        const links = doc.querySelectorAll('a');
-        console.log(`Found ${links.length} links`);
-        return links.length;
-      } catch (error) {
-        console.error('Error fetching the page:', error);
-        return 'Failed to load link count.';
-      }
-    }
+const headerImg = document.querySelector("header img");
 
-    (async function displayLinkCount() {
-      const url = 'https://knowledge.trap.lol/category/cs/programming/python/';
-      const count = await fetchAndCountLinks(url);
-      const displayElement = document.getElementById('html');
-      if (!displayElement) {
-        console.error('Display element with id "html" not found');
-        return;
-      }
-      displayElement.innerText = `${count}`;
-    })();
+document.addEventListener('mousemove', function(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+    
+    const imgRect = headerImg.getBoundingClientRect();
+    const imgCenterX = imgRect.left + imgRect.width / 2;
+    const imgCenterY = imgRect.top + imgRect.height / 2;
+    
+    const tiltX = (mouseX - imgCenterX) / (imgRect.width / 2);
+    const tiltY = (mouseY - imgCenterY) / (imgRect.height / 2);
+    const maxTilt = 3; // Set the maximum tilt value
+    
+    const clampedTiltX = Math.max(Math.min(tiltX, maxTilt), -maxTilt); // Clamp the tiltX value
+    const clampedTiltY = Math.max(Math.min(tiltY, maxTilt), -maxTilt); // Clamp the tiltY value
+    headerImg.style.transform = `rotateX(${clampedTiltY * maxTilt}deg) rotateY(${-clampedTiltX * maxTilt}deg)`;
 });
