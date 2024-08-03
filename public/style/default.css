@@ -153,6 +153,11 @@ main {
     white-space: nowrap;
   }
   
+.marquee a {
+    text-decoration: none;
+    color: var(--primary-color-green);
+    display: flex;
+}
   
 .marquee-content li img {
     width: 100%;
