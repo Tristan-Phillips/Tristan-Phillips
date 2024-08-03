@@ -503,6 +503,10 @@ footer {
     align-items: center;
 }
 
+.marquee-content i:hover {
+    color: var(--primary-color-purple);
+}
+
 li a p {
     top: 0;
     font-size: 0.5rem;

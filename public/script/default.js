@@ -95,19 +95,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const headerImg = document.querySelector("header img");
 
-document.addEventListener('mousemove', function(event) {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-    
-    const imgRect = headerImg.getBoundingClientRect();
-    const imgCenterX = imgRect.left + imgRect.width / 2;
-    const imgCenterY = imgRect.top + imgRect.height / 2;
-    
-    const tiltX = (mouseX - imgCenterX) / (imgRect.width / 2);
-    const tiltY = (mouseY - imgCenterY) / (imgRect.height / 2);
-    const maxTilt = 3; // Set the maximum tilt value
-    
-    const clampedTiltX = Math.max(Math.min(tiltX, maxTilt), -maxTilt); // Clamp the tiltX value
-    const clampedTiltY = Math.max(Math.min(tiltY, maxTilt), -maxTilt); // Clamp the tiltY value
-    headerImg.style.transform = `rotateX(${clampedTiltY * maxTilt}deg) rotateY(${-clampedTiltX * maxTilt}deg)`;
-});
+if (headerImg) {
+    document.addEventListener('mousemove', function(event) {
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+        
+        const imgRect = headerImg.getBoundingClientRect();
+        const imgCenterX = imgRect.left + imgRect.width / 2;
+        const imgCenterY = imgRect.top + imgRect.height / 2;
+        
+        const tiltX = (mouseX - imgCenterX) / (imgRect.width / 2);
+        const tiltY = (mouseY - imgCenterY) / (imgRect.height / 2);
+        const maxTilt = 3; // Set the maximum tilt value
+        
+        const clampedTiltX = Math.max(Math.min(tiltX, maxTilt), -maxTilt); // Clamp the tiltX value
+        const clampedTiltY = Math.max(Math.min(tiltY, maxTilt), -maxTilt); // Clamp the tiltY value
+        headerImg.style.transform = `rotateX(${clampedTiltY * maxTilt}deg) rotateY(${-clampedTiltX * maxTilt}deg)`;
+    });
+}
