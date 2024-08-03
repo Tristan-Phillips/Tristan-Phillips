@@ -8,6 +8,8 @@
     --primary-text-white: #fff;
     --secondary-color-purple: #73648A;
     --tertiary-color-purple: #453750;
+    --primary-color-red: #FF0000;
+    --primary-notification-color: #ff00009c;
     --marquee-width: 100vw;
     --marquee-height: 2.5vh;
     /* --marquee-elements: 12; */ /* defined with JavaScript */
@@ -136,10 +138,10 @@ main {
   /* .marquee-content:hover {
     animation-play-state: paused;
   } */
-  @keyframes scrolling {
+  /* @keyframes scrolling {
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
-  }
+  } */
   
 .marquee-content li {
     display: flex;
@@ -493,4 +495,17 @@ footer {
     width: 100%;
     border: 2px solid var(--primary-color-green);
     box-shadow: 0 0 10px var(--primary-color-green);
+}
+
+.marquee-content i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li a p {
+    position: absolute;
+    top: 0;
+    font-size: 0.5rem;
+    color: var(--primary-notification-color);
 }
