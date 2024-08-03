@@ -460,6 +460,16 @@ footer {
     padding: 0;
 }
 
+#listpage .project h2{
+    margin: 1rem 0;
+    padding: 0;
+}
+
+#listpage .project p {
+    margin: 0;
+    padding: 0;
+}
+
 #listpage .title a {
     text-decoration: none;
     color: var(--primary-color-green);
