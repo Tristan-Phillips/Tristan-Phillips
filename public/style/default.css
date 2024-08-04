@@ -512,3 +512,14 @@ li a p {
     font-size: 0.5rem;
     color: var(--primary-notification-color);
 }
+
+/* .marquee-content i {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.marquee-content li p {
+    font-size: 1rem;
+    color: var(--primary-notification-color);
+} */
