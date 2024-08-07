@@ -31,8 +31,8 @@ https://url.trap.lol/twitch
         setInterval(function() {
             var h1 = document.querySelector('h1');
             var currentTime = new Date().getTime();
-            var fifteenMinutes = 15 * 60 * 1000;
-            var fiveMinutes = 5 * 60 * 1000;
+            var fifteenMinutes = 10 * 60 * 1000;
+            var fiveMinutes = 2 * 60 * 1000;
             var timePassed = currentTime % (fifteenMinutes + fiveMinutes);
 
             if (timePassed < fifteenMinutes) {
