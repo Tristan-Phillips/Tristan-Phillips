@@ -523,3 +523,7 @@ li a p {
     font-size: 1rem;
     color: var(--primary-notification-color);
 } */
+
+.noob {
+    font-size: x-small;
+}
