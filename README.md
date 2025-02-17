@@ -9,7 +9,7 @@ I used to take this too seriously, and that got me nowhere. Now I am just here t
 *   🌍  I'm based in South Africa
 *   🖥️  See my portfolio at [trap.lol](http://trap.lol)
 *   ✉️  You can contact me at [cv@alias.trap.lol](mailto:cv@alias.trap.lol)
-*   🚀  I'm currently working on [Timeline.Forum](http://timeline.forum)
+*   🚀  I'm currently working on [Timeline.Forum](http://timeline.forum) and [NerdQuiz.Fun](http://nerdquiz.fun)
 *   🧠  I'm learning to combine front & backend
 
 ### Skills 
