@@ -3,54 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="TRAP.LOL | Tristan Phillips">
+    <meta property="og:description" content="Contains traces of irony and hungry ghosts.">
+    <meta property="og:image" content="https://trap.lol/public/img/pp-trap.png"> 
     <link rel="stylesheet" href="public/style/default.css">
     <script src="public/script/default.js" defer></script>
     <script src="https://kit.fontawesome.com/29c25c094f.js" crossorigin="anonymous"></script>
-    <title>Tristan Robin Arthur Phillips</title>
+    <title>Tristan (TRAP) Phillips | Portfolio</title>
 </head>
 <body>
-    <div class="social">
-        <ul>
-            <li><a href="https://url.trap.lol/github" target="_blank" rel="noopener noreferrer">Github<i class="fa fa-github"></i></a></li>
-            <li><a href="https://url.trap.lol/codepen" target="_blank" rel="noopener noreferrer">Codepen<i class="fa fa-codepen"></i></a></li>
-            <li><a href="https://url.trap.lol/twitch" target="_blank" rel="noopener noreferrer">Twitch<i class="fa fa-twitch"></i></a></li>
-        </ul>
-    </div>
-    <header>
-        <div class="badge">
-            <img src="public/img/pp-trap.png" alt="Tristan Robin Arthur Phillips">
-        </div>
-        <div class="namewslogan">
-            <h1>Tristan Robin Arthur Phillips</h1>
-            <sub>Pretending to have it all figured out</sub>
-        </div>
-    </header>
+    <nav class="social-nav">
+        <a href="https://github.com/Tristan-Phillips" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://codepen.io/tristan-phillips" target="_blank" aria-label="CodePen">
+            <i class="fab fa-codepen"></i>
+        </a>
+        <a href="https://twitch.tv/trap_xyz" target="_blank" aria-label="Twitch">
+            <i class="fab fa-twitch"></i>
+        </a>
+    </nav>
 
-    <section class="projects">
-        <h3>Projects</h3>
-        <div class="project-slider">
-            <a href="projects/webdev">
-                <div class="project">
-                    <h4>WebDev</h4>
-                    <i class="fa-solid fa-eye"></i>
-                    <p id="webdev-project-count">Loading projects ...</p>
+    <main class="container">
+        <header class="hero">
+            <div class="avatar-container">
+                <img src="public/img/pp-trap.png" alt="Tristan avatar" class="avatar">
+            </div>
+            <h1 class="title">Tristan Phillips<span class="aka">TRAP</span></h1>
+            <p class="tagline">Perpetual learner trying to make sense of it all</p>
+        </header>
+
+        <section class="bio">
+            <p>🌍 South-Africa based · 🎓 BCompSci grad · 📚 Psych undergrad<br>
+            🐧 Open-source enthusiast · 🧠 Neuro-curious · 🍄 Myco-nerd</p>
+        </section>
+
+        <section class="edu-section">
+            <h2>Journey So Far</h2>
+            <div class="edu-card">
+                <h3>Computer Science (BSc)</h3>
+                <p>Official title: "Error Message Interpretation Specialist"</p>
+            </div>
+            <div class="edu-card">
+                <h3>Psychology (BA in progress)</h3>
+                <p>Current research: "Sleep Deprivation Studies on Self"</p>
+            </div>
+        </section>
+
+        <section class="github-activity">
+            <h2>Recent Code Adventures <i class="fab fa-github"></i></h2>
+            <div id="github-projects" class="project-grid">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </section>
+        
+        <section class="employment">
+            <h2>Professional Misadventures</h2>
+
+            <div class="timeline-card">
+                <h3>🛒 Digital Shopkeeper <span class="date">2023-Present</span></h3>
+                <div class="pill-list">
+                    <span>E-Commerce Juggling</span>
+                    <span>Shopify Taming</span>
+                    <span>Attention Alchemy</span>
                 </div>
-            </a>
-            <a href="projects/software">
-                <div class="project">
-                    <h4>Software</h4>
-                    <i class="fa-solid fa-eye-slash"></i>
-                    <p id="software-project-count">Loading projects ...</p>
+                <p class="note">Abandoned shopping cart resolver</p>
+            </div>
+        
+            <div class="timeline-card">
+                <h3>💻 Hardware Witchdoctor <span class="date">2020-21</span></h3>
+                <div class="pill-list">
+                    <span>Tech Necromancy</span>
+                    <span>Driver Exorcisms</span>
+                    <span>Blue Screen Therapy</span>
                 </div>
-            </a>
-            <a href="projects/other">
-                <div class="project">
-                    <h4>Other</h4>
-                    <i class="fa-solid fa-terminal"></i>
-                    <p id="other-project-count">Loading projects ...</p>
+                <p class="note">Specialized in resurrecting dead laptops</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>🕳️ Paperwork Event Horizon Analyst <span class="date">2019</span></h3>
+                <div class="pill-list">
+                    <span>Spreadsheet Wizardry</span>
+                    <span>Supplier Diplomacy</span>
+                    <span>Payroll Alchemy</span>
                 </div>
-            </a>
-        </div>
-    </section>
+                <p class="note">Survived the infinite paperwork vortex</p>
+            </div>      
+
+        </section>
+
+        <section class="interests">
+            <h2>Current Obsessions</h2>
+            <div class="interest-cloud">
+                <span data-tooltip="Computer Science">Recursion Therapy</span>
+                <span data-tooltip="Neuroscience">Synaptic Archaeology</span>
+                <span data-tooltip="Mycology">Mycelium Networks</span>
+                <span data-tooltip="Pharmacology">Receptor Rebelling</span>
+                <span data-tooltip="Philosophy">Existential Debugging</span>
+                <span data-tooltip="Psychology">Memory Architectures</span>
+                <span data-tooltip="Astronomy">Cosmic Horror</span>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>🚧 This site is permanently under construction<br>
+            Powered by existential curiosity and too much coffee</p>
+        </footer>
+    </main>
 </body>
 </html>

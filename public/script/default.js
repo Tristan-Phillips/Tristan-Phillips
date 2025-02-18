@@ -1,98 +1,102 @@
-const root = document.documentElement;
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Fetch the webdev.html content
-    fetch('../projects/webdev/index.html')
-        .then(response => response.text())
-        .then(html => {
-            // Parse the HTML string into a document object
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            
-            // Count elements with the .project class
-            const projectCount = doc.querySelectorAll('.project').length;
-            
-            // Display the count in a <p> element on index.html
-            const displayElement = document.getElementById('webdev-project-count');
-            if (!displayElement) {
-                console.error('Display element not found');
-                return;
-            }
-            displayElement.textContent = `${projectCount} projects`;
-        })
-        .catch(error => {
-            console.error('Error fetching or parsing frontend.html:', error);
-        });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-// Fetch the software.html content
-fetch('../projects/software/index.html')
-    .then(response => response.text())
-    .then(html => {
-        // Parse the HTML string into a document object
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        
-        // Count elements with the .project class
-        const projectCount = doc.querySelectorAll('.project').length;
-        
-        // Display the count in a <p> element on index.html
-        const displayElement = document.getElementById('software-project-count');
-        if (!displayElement) {
-            console.error('Display element not found');
-            return;
+document.addEventListener('DOMContentLoaded', () => {
+    // Manual Projects Configuration
+    const PROJECTS = [
+        {
+            name: "Timeline.Forum",
+            description: "Discuss events in chronological order",
+            url: "https://github.com/Tristan-Phillips/timeline",
+            website: "https://timeline.forum",
+            languages: ["C++", "Vue", "CSS", "HTML"]
+        },
+        {
+            name: "Nerdquiz.Fun",
+            description: "A quiz site with no bullshit",
+            url: "https://github.com/Tristan-Phillips/nerdquiz.fun",
+            website: "https://nerdquiz.fun",
+            languages: ["JavaScript", "CSS", "HTML"]
         }
-        displayElement.textContent = `${projectCount} projects`;
-    })
-    .catch(error => {
-        console.error('Error fetching or parsing backend.html:', error);
-    });
-});
+    ];
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Fetch the frontend.html content
-    fetch('../projects/other/index.html')
-        .then(response => response.text())
-        .then(html => {
-            // Parse the HTML string into a document object
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            
-            // Count elements with the .project class
-            const projectCount = doc.querySelectorAll('.project').length;
-            
-            // Display the count in a <p> element on index.html
-            const displayElement = document.getElementById('other-project-count');
-            if (!displayElement) {
-                console.error('Display element not found');
-                return;
-            }
-            displayElement.textContent = `${projectCount} projects`;
-        })
-        .catch(error => {
-            console.error('Error fetching or parsing other.html:', error);
+    // Render Projects
+    try {
+        const projectGrid = document.getElementById('github-projects');
+        projectGrid.innerHTML = '';
+
+        PROJECTS.forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+
+            // Generate language badges
+            const languages = project.languages
+                .map(lang => `<span class="tech-pill">${lang}</span>`)
+                .join('');
+
+                card.innerHTML = `
+                <h3>${project.name}</h3>
+                ${project.description ? `<p>${project.description}</p>` : ''}
+                <div class="tech-list">${languages}</div>
+                <div class="project-links">
+                    ${project.website ? `
+                        <a href="${project.website}" target="_blank" class="web-link">
+                            <i class="fas fa-external-link-alt"></i> Visit Site
+                        </a>
+                    ` : ''}
+                    <a href="${project.url}" target="_blank" class="github-link">
+                        <i class="fas fa-code-branch"></i> View Source
+                    </a>
+                </div>
+            `;
+
+            card.style.animation = 'fadeIn 0.5s ease';
+            projectGrid.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Project load failed:', error);
+        document.getElementById('github-projects').innerHTML = `
+            <div class="project-card">
+                <h3>Dimension Error</h3>
+                <p>Projects currently in another reality.</p>
+            </div>
+        `;
+    }
+
+    // Education Cards Animation
+    document.querySelectorAll('.edu-card').forEach((card, index) => {
+        setTimeout(() => {
+            card.style.opacity = 1;
+            card.style.transform = 'translateY(0)';
+        }, index * 200);
+    });
+
+    // Avatar Hover Effect
+    const avatar = document.querySelector('.avatar');
+    if (avatar) {
+        document.addEventListener('mousemove', (e) => {
+            const { clientX: x, clientY: y } = e;
+            const rect = avatar.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+
+            const rotateX = Math.min(Math.max((-(y - centerY)) / 10, -15), 15).toFixed(2);
+            const rotateY = Math.min(Math.max((x - centerX) / 10, -15), 15).toFixed(2);
+
+            avatar.style.transform = `perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        // Reset rotation when mouse leaves
+        document.addEventListener('mouseleave', () => {
+            avatar.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
         });
     }
-);
 
-const headerImg = document.querySelector("header img");
-
-if (headerImg) {
-    document.addEventListener('mousemove', function(event) {
-        const mouseX = event.clientX;
-        const mouseY = event.clientY;
-        
-        const imgRect = headerImg.getBoundingClientRect();
-        const imgCenterX = imgRect.left + imgRect.width / 2;
-        const imgCenterY = imgRect.top + imgRect.height / 2;
-        
-        const tiltX = (mouseX - imgCenterX) / (imgRect.width / 2);
-        const tiltY = (mouseY - imgCenterY) / (imgRect.height / 2);
-        const maxTilt = 3; // Set the maximum tilt value
-        
-        const clampedTiltX = Math.max(Math.min(tiltX, maxTilt), -maxTilt); // Clamp the tiltX value
-        const clampedTiltY = Math.max(Math.min(tiltY, maxTilt), -maxTilt); // Clamp the tiltY value
-        headerImg.style.transform = `rotateX(${clampedTiltY * maxTilt}deg) rotateY(${-clampedTiltX * maxTilt}deg)`;
+    // Random micro-interactions
+    document.querySelectorAll('.interest-cloud span').forEach(span => {
+        span.style.transform = `rotate(${(Math.random() * 4 - 2)}deg)`;
+        span.addEventListener('mouseover', () => {
+            span.style.transform = 'rotate(0deg) scale(1.1)';
+        });
+        span.addEventListener('mouseout', () => {
+            span.style.transform = `rotate(${(Math.random() * 4 - 2)}deg)`;
+        });
     });
-}
+});
