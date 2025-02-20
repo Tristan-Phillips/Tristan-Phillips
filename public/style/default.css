@@ -374,27 +374,33 @@ h2 {
     font-weight: bold;
 }
 
-.tech-icons {
+.live-tech-pill {
+    background: var(--dark-bg);
+    color: var(--accent-red);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid var(--accent-red);
+    margin: 0.25rem;
+}
+
+.live-project-links {
     display: flex;
     gap: 1rem;
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
-.project-button {
-    background: var(--primary-green);
-    color: var(--dark-bg) !important;
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
+.live-project-links a {
+    color: var(--accent-red);
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: bold;
+    border: 1px solid var(--accent-red);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     transition: all 0.3s ease;
+    font-size: 0.9rem;
 }
 
-.project-button:hover {
-    background: var(--primary-purple);
-    transform: translateY(-2px);
+.live-project-links a:hover {
+    background: var(--accent-red);
+    color: var(--dark-bg);
 }

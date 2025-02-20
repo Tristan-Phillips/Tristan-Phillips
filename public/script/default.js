@@ -21,36 +21,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const LIVE_PROJECTS = [
         {
             name: "Paintedd.Store",
-            description: "",
+            description: "Digital capitalism simulator powered by Shopify and artistic desperation",
             url: "https://paintedd.store",
             tech: ["shopify", "css"],
             status: "Live"
         },
         {
-            name: "Paintedd Link Page",
-            description: "",
+            name: "Paintedd Link Hub",
+            description: "URL stable for the ever-proliferating online identities (help)",
             url: "https://me.paintedd.art",
+            sourcecode: "https://github.com/Tristan-Phillips/Me.Paintedd.Art",
             tech: ["html", "css", "javascript"],
             status: "live"
         },
         {
             name: "Mr4x4 and More Quotes",
-            description: "",
+            description: "Automotive prayer wheel for when your car breaks down again",
             url: "https://quote.mr4x4andmore.com/",
             tech: ["wordpress"],
             status: "live"
         },
         {
-            name: "TRAP Blog page",
-            description: "",
-            url: "https://blog.trap.lol",
-            tech: ["hugo"],
-            status: "live"
-        },
-        {
-            name: "TRAP Quick Links Page",
-            description: "",
+            name: "TRAP Dashboard",
+            description: "Digital life raft for drowning in 62 open browser tabs",
             url: "https://dash.trap.lol",
+            sourcecode: "https://github.com/Tristan-Phillips/dash",
             tech: ["html", "css", "javascript"],
             status: "live"
         }
@@ -140,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.innerHTML = `
                     <h3>${project.name}</h3>
                     <p>${project.description}</p>
-                    <div class="tech-icons">${icons}</div>
+                    <div class="tech-list">${icons}</div>
                     <a href="${project.url}" target="_blank" class="project-button">
                         <i class="fas fa-rocket"></i>
                         Visit ${project.status === 'beta' ? 'Beta' : 'Live Site'}
