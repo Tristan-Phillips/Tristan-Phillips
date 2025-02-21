@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Paintedd.Store",
             description: "Digital capitalism simulator powered by Shopify and artistic desperation",
             url: "https://paintedd.store",
-            tech: ["shopify", "css"],
+            languages: ["Shopify"],
             status: "Live"
         },
         {
@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "URL stable for the ever-proliferating online identities (help)",
             url: "https://me.paintedd.art",
             sourcecode: "https://github.com/Tristan-Phillips/Me.Paintedd.Art",
-            tech: ["html", "css", "javascript"],
+            languages: ["html", "css", "javascript"],
             status: "live"
         },
         {
             name: "Mr4x4 and More Quotes",
             description: "Automotive prayer wheel for when your car breaks down again",
             url: "https://quote.mr4x4andmore.com/",
-            tech: ["wordpress"],
+            languages: ["wordpress"],
             status: "live"
         },
         {
@@ -46,32 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Digital life raft for drowning in 62 open browser tabs",
             url: "https://dash.trap.lol",
             sourcecode: "https://github.com/Tristan-Phillips/dash",
-            tech: ["html", "css", "javascript"],
+            languages: ["html", "css", "javascript"],
             status: "live"
         }
     ];
-
-    // Tech Icon Mapping
-    const TECH_ICONS = {
-        python: "fab fa-python",
-        nodejs: "fab fa-node",
-        cpp: "fab fa-cuttlefish",
-        vue: "fab fa-vuejs",
-        javascript: "fab fa-js-square",
-        css: "fab fa-css3-alt",
-        html: "fab fa-html5",
-        shopify: "fab fa-shopify",
-        wordpress: "fab fa-wordpress",
-        hugo: "fas fa-code",
-        php: "fab fa-php",
-        mysql: "fas fa-database",
-        postgresql: "fas fa-database",
-        docker: "fab fa-docker",
-        linux: "fab fa-linux",
-        git: "fab fa-git-alt",
-        cloudflare: "fas fa-cloud",
-        json: "fas fa-file-code"
-    };
 
     // Render GitHub Projects
     function renderGitHubProjects() {
@@ -127,17 +105,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const card = document.createElement('div');
                 card.className = 'project-card live-project-card';
 
-                const icons = project.tech
-                    .map(t => TECH_ICONS[t.toLowerCase()] || 'fas fa-code')
-                    .map(icon => `<i class="${icon}"></i>`)
-                    .join('');
+                const languages = project.languages
+                .map(lang => `<span class="tech-pill">${lang}</span>`)
+                .join('');
 
                 card.innerHTML = `
                     <h3>${project.name}</h3>
                     <p>${project.description}</p>
-                    <div class="tech-list">${icons}</div>
+                    <div class="tech-list">${languages}</div>
                     <a href="${project.url}" target="_blank" class="project-button">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-external-link-alt"></i>
                         Visit ${project.status === 'beta' ? 'Beta' : 'Live Site'}
                     </a>
                 `;
