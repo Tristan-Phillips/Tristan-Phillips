@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "URL stable for the ever-proliferating online identities (help)",
             url: "https://me.paintedd.art",
             sourcecode: "https://github.com/Tristan-Phillips/Me.Paintedd.Art",
-            languages: ["html", "css", "javascript"],
+            languages: ["JavaScript", "CSS", "HTML"],
             status: "live"
         },
         {
             name: "Mr4x4 and More Quotes",
             description: "Automotive prayer wheel for when your car breaks down again",
             url: "https://quote.mr4x4andmore.com/",
-            languages: ["wordpress"],
+            languages: ["Wordpress"],
             status: "live"
         },
         {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Digital life raft for drowning in 62 open browser tabs",
             url: "https://dash.trap.lol",
             sourcecode: "https://github.com/Tristan-Phillips/dash",
-            languages: ["html", "css", "javascript"],
+            languages: ["JavaScript", "CSS", "HTML"],
             status: "live"
         }
     ];
