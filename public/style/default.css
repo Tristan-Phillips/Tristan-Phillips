@@ -347,6 +347,36 @@ h2 {
     .project-grid {
         grid-template-columns: 1fr;
     }
+
+    .lab-portal {
+        margin: 1.5rem auto;
+        perspective: none;
+    }
+
+    .portal-card {
+        padding: 1rem;
+        border-width: 1px;
+    }
+
+    .portal-item {
+        font-size: 1.25rem;
+    }
+
+    .portal-button {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Simplify animations for mobile */
+    @media (prefers-reduced-motion: no-preference) {
+        .portal-item {
+            transition: transform 0.2s ease;
+        }
+
+        .portal-item:active {
+            transform: scale(1.1);
+        }
+    }
 }
 
 /* Live Projects */
@@ -407,19 +437,21 @@ h2 {
 
 /* Lab Portal Section */
 .lab-portal {
-    margin: 4rem auto;
+    margin: 2rem auto;
     max-width: 800px;
     perspective: 1000px;
+    padding: 0 1rem; 
 }
 
 .portal-card {
     background: var(--card-bg);
     border: 2px solid var(--primary-purple);
     border-radius: var(--border-radius);
-    padding: 2rem;
+    padding: 1.5rem; 
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .portal-card:hover {
@@ -435,14 +467,16 @@ h2 {
 .portal-grid {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 1.5rem 0;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    margin: 1rem 0; 
 }
 
 .portal-item {
     position: relative;
-    font-size: 2rem;
-    cursor: help;
+    font-size: 1.5rem; 
+    cursor: pointer;
+    padding: 0.5rem;
 }
 
 .portal-item:hover {
@@ -456,11 +490,14 @@ h2 {
     gap: 0.5rem;
     background: var(--primary-green);
     color: var(--dark-bg);
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 1rem;
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .portal-button:hover {
@@ -476,4 +513,21 @@ h2 {
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+.portal-item:active {
+    color: var(--primary-green) !important;
+}
+
+@media (hover: hover) {
+    .portal-item:hover {
+        color: var(--primary-green);
+        animation: glitch 0.3s infinite;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .portal-card:hover {
+        transform: rotateY(5deg) rotateX(2deg);
+    }
 }
