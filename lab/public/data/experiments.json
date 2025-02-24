@@ -6,7 +6,7 @@
             "status": "beta",
             "tags": ["web"],
             "tech": ["CSS", "JavaScript"],
-            "demoUrl": "/lab/#",
+            "demoUrl": "#",
             "repoUrl": "#"
         },
         {
@@ -15,7 +15,7 @@
             "status": "live",
             "tags": ["games"],
             "tech": ["TypeScript", "React"],
-            "demoUrl": "/lab/#",
+            "demoUrl": "#",
             "repoUrl": "#"
         },
         {
@@ -24,26 +24,35 @@
             "status": "alpha",
             "tags": ["ai"],
             "tech": ["Python", "TensorFlow"],
-            "demoUrl": "/lab/#",
+            "demoUrl": "#",
             "repoUrl": "#"
         },
         {
-            "title": "Project 4",
-            "description": "description about overlay project 4",
-            "status": "alpha",
+            "title": "TEXT | Lag",
+            "description": "A simple text overlay that displays the text 'Stream might be Laggy'",
+            "status": "scratch",
             "tags": ["overlay"],
-            "tech": ["JavaScript", "CSS"],
-            "demoUrl": "/lab/#",
-            "repoUrl": "#"
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "overlay/text/lag.html",
+            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips"
         },
         {
-            "title": "Project 5",
-            "description": "description about overlay project 4",
-            "status": "live",
+            "title": "TEXT | No",
+            "description": "A simple text overlay that displays the text 'No'",
+            "status": "scratch",
             "tags": ["overlay"],
-            "tech": ["JavaScript", "CSS"],
-            "demoUrl": "/lab/#",
-            "repoUrl": "#"
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "overlay/text/no.html",
+            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips"
+        },
+        {
+            "title": "TEXT | Noob",
+            "description": "A simple text overlay that displays the text 'I AM NOOB' in timed intervals",
+            "status": "scratch",
+            "tags": ["overlay"],
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "overlay/text/noob.html",
+            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips"
         }
     ]
 }
