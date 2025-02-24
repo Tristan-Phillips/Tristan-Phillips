@@ -60,26 +60,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             status: "Live"
         },
         {
-            name: "Paintedd Link Hub",
-            description: "URL stable for the ever-proliferating online identities (help)",
-            url: "https://me.paintedd.art",
-            sourcecode: "https://github.com/Tristan-Phillips/Me.Paintedd.Art",
-            languages: ["JavaScript", "CSS", "HTML"],
-            status: "live"
-        },
-        {
             name: "Mr4x4 and More Quotes",
             description: "Automotive prayer wheel for when your car breaks down again",
             url: "https://quote.mr4x4andmore.com/",
             languages: ["Wordpress"],
-            status: "live"
-        },
-        {
-            name: "TRAP Dashboard",
-            description: "Digital life raft for drowning in 62 open browser tabs",
-            url: "https://dash.trap.lol",
-            sourcecode: "https://github.com/Tristan-Phillips/dash",
-            languages: ["JavaScript", "CSS", "HTML"],
             status: "live"
         }
     ];

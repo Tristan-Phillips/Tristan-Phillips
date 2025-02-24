@@ -1,22 +1,22 @@
 {
     "experiments": [
         {
-            "title": "Project 2",
-            "description": "description about game project 2",
+            "title": "LINK | Paintedd Socials",
+            "description": "@Painted_d quick link social dashboard",
             "status": "live",
-            "tags": ["games"],
-            "tech": ["TypeScript", "React"],
-            "demoUrl": "#",
-            "repoUrl": "#"
+            "tags": ["hyperlink"],
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "https://me.paintedd.art/",
+            "repoUrl": "https://github.com/Tristan-Phillips/Me.Paintedd.Art"
         },
         {
-            "title": "Project 3",
-            "description": "description about ai project 3",
-            "status": "alpha",
-            "tags": ["ai"],
-            "tech": ["Python", "TensorFlow"],
-            "demoUrl": "#",
-            "repoUrl": "#"
+            "title": "LINK | Link Dashboard",
+            "description": "My quick link web dashboard",
+            "status": "live",
+            "tags": ["hyperlink"],
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "https://dash.trap.lol/",
+            "repoUrl": "https://github.com/Tristan-Phillips/dash"
         },
         {
             "title": "WEB | RNG Pixel Art",
