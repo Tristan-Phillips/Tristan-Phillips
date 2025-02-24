@@ -34,7 +34,7 @@
             "tags": ["overlay"],
             "tech": ["JavaScript", "CSS", "HTML"],
             "demoUrl": "overlay/text/lag.html",
-            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips"
+            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/lag.html"
         },
         {
             "title": "TEXT | No",
@@ -43,7 +43,7 @@
             "tags": ["overlay"],
             "tech": ["JavaScript", "CSS", "HTML"],
             "demoUrl": "overlay/text/no.html",
-            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips"
+            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/no.html"
         },
         {
             "title": "TEXT | Noob",
@@ -52,7 +52,7 @@
             "tags": ["overlay"],
             "tech": ["JavaScript", "CSS", "HTML"],
             "demoUrl": "overlay/text/noob.html",
-            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips"
+            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/noob.html"
         }
     ]
 }
