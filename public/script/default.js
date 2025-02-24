@@ -1,4 +1,47 @@
-document.addEventListener('DOMContentLoaded', () => {
+async function updateLabCounter() {
+    try {
+        const portalItem = document.querySelector('#experiment-counter .tooltip');
+        if (!portalItem) return;
+
+        // Fetch experiments data
+        const response = await fetch('/lab/public/data/experiments.json');
+        if (!response.ok) throw new Error('Failed to load experiments');
+
+        const data = await response.json();
+        const experiments = data.experiments || [];
+
+        // Count live+beta+alpha experiments
+        const experimentalProjects = experiments.length;
+        const liveCount = experiments.filter(p => p.status?.toLowerCase() === 'live').length;
+
+        // Fun status messages
+        let statusMessage;
+        if (experimentalProjects === 0) {
+            statusMessage = 'Lab Currently Haunted';
+        } else {
+            statusMessage = `${experimentalProjects} Active Experiment${experimentalProjects !== 1 ? 's' : ''}`;
+            statusMessage += ` (${liveCount} Live)`;
+        }
+
+        portalItem.textContent = statusMessage;
+
+        // Animate flask based on activity
+        const flask = document.querySelector('#experiment-counter .fa-flask');
+        if (flask) {
+            flask.style.transform = `scale(${1 + (liveCount * 0.1)})`;
+            flask.style.filter = liveCount > 0 
+                ? `hue-rotate(${liveCount * 15}deg)`
+                : 'grayscale(1)';
+        }
+
+    } catch (error) {
+        console.error('Lab counter error:', error);
+        document.querySelector('#experiment-counter .tooltip').textContent =
+            'Experiment Data Corrupted';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
     // Manual Projects Configuration
     const PROJECTS = [
         {
@@ -130,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial Rendering
     renderGitHubProjects();
     renderLiveProjects();
+    await updateLabCounter();
 
     // Education Cards Animation
     document.querySelectorAll('.edu-card').forEach((card, index) => {

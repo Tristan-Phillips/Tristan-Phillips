@@ -404,3 +404,76 @@ h2 {
     background: var(--accent-red);
     color: var(--dark-bg);
 }
+
+/* Lab Portal Section */
+.lab-portal {
+    margin: 4rem auto;
+    max-width: 800px;
+    perspective: 1000px;
+}
+
+.portal-card {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-purple);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.portal-card:hover {
+    transform: rotateY(5deg) rotateX(2deg);
+}
+
+.portal-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.portal-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.portal-item {
+    position: relative;
+    font-size: 2rem;
+    cursor: help;
+}
+
+.portal-item:hover {
+    color: var(--primary-green);
+    animation: glitch 0.3s infinite;
+}
+
+.portal-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-green);
+    color: var(--dark-bg);
+    padding: 0.8rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.portal-button:hover {
+    background: var(--primary-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(241, 169, 255, 0.3);
+}
+
+.terminal-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

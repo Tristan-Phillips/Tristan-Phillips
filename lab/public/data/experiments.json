@@ -1,0 +1,49 @@
+{
+    "experiments": [
+        {
+            "title": "Project 1",
+            "description": "description about web project 1",
+            "status": "beta",
+            "tags": ["web"],
+            "tech": ["CSS", "JavaScript"],
+            "demoUrl": "/lab/#",
+            "repoUrl": "#"
+        },
+        {
+            "title": "Project 2",
+            "description": "description about game project 2",
+            "status": "live",
+            "tags": ["games"],
+            "tech": ["TypeScript", "React"],
+            "demoUrl": "/lab/#",
+            "repoUrl": "#"
+        },
+        {
+            "title": "Project 3",
+            "description": "description about ai project 3",
+            "status": "alpha",
+            "tags": ["ai"],
+            "tech": ["Python", "TensorFlow"],
+            "demoUrl": "/lab/#",
+            "repoUrl": "#"
+        },
+        {
+            "title": "Project 4",
+            "description": "description about overlay project 4",
+            "status": "alpha",
+            "tags": ["overlay"],
+            "tech": ["JavaScript", "CSS"],
+            "demoUrl": "/lab/#",
+            "repoUrl": "#"
+        },
+        {
+            "title": "Project 5",
+            "description": "description about overlay project 4",
+            "status": "live",
+            "tags": ["overlay"],
+            "tech": ["JavaScript", "CSS"],
+            "demoUrl": "/lab/#",
+            "repoUrl": "#"
+        }
+    ]
+}
