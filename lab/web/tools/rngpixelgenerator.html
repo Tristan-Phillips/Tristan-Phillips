@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Pixel Art Generator 16x16</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      #container__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . .";
+      }
+
+      .grid--cell {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: 1px solid #000;
+      }
+
+      .container__interface {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        & button {
+          margin-top: 10px;
+          padding: 10px 20px;
+          cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="container__grid"></div>
+    <div class="container__interface">
+      <button id="generate">Generate</button>
+      <button id="clear">Clear</button>
+      <button id="save">Download</button>
+      <label class="toggle-switch">
+        Freak Mode <input type="checkbox" id="toggle"">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <script>
+      const generateButton = document.getElementById("generate");
+      const gridContainer = document.getElementById("container__grid");
+
+      function generateRandomColor() {
+        const red = Math.floor(Math.random() * 256);
+        const green = Math.floor(Math.random() * 256);
+        const blue = Math.floor(Math.random() * 256);
+
+        return `rgb(${red}, ${green}, ${blue})`;
+      }
+
+      generateButton.addEventListener("click", function () {
+        const gridCells = gridContainer.getElementsByClassName("grid--cell");
+        for (const element of gridCells) {
+          const cell = element;
+          const randomColor = generateRandomColor();
+          cell.style.backgroundColor = randomColor;
+        }
+      });
+
+      const clearButton = document.getElementById("clear");
+
+      clearButton.addEventListener("click", function () {
+        const gridCells = gridContainer.getElementsByClassName("grid--cell");
+        for (const element of gridCells) {
+          const cell = element;
+          cell.style.backgroundColor = "white";
+        }
+      });
+
+      const saveButton = document.getElementById("save");
+
+      saveButton.addEventListener("click", function () {
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+
+        const gridWidth = gridContainer.offsetWidth;
+        const gridHeight = gridContainer.offsetHeight;
+        canvas.width = gridWidth;
+        canvas.height = gridHeight;
+
+        const gridCells = gridContainer.getElementsByClassName("grid--cell");
+        for (const element of gridCells) {
+          const cell = element;
+          const cellStyle = getComputedStyle(cell);
+          const cellColor = cellStyle.backgroundColor;
+          const cellRect = cell.getBoundingClientRect();
+
+          const cellX =
+            cellRect.left - gridContainer.getBoundingClientRect().left;
+          const cellY =
+            cellRect.top - gridContainer.getBoundingClientRect().top;
+
+          context.fillStyle = cellColor;
+          context.fillRect(cellX, cellY, cell.offsetWidth, cell.offsetHeight);
+        }
+
+        const dataURL = canvas.toDataURL();
+        const link = document.createElement("a");
+        link.href = dataURL;
+        link.download = "pixel_art.png";
+        link.click();
+      });
+
+      window.addEventListener("load", function () {
+        const containerGrid = document.getElementById("container__grid");
+        const gridSize = 16;
+
+        for (let i = 0; i < gridSize; i++) {
+          for (let j = 0; j < gridSize; j++) {
+            const gridCell = document.createElement("div");
+            gridCell.classList.add("grid--cell");
+            containerGrid.appendChild(gridCell);
+          }
+        }
+      });
+
+      const toggleCheckbox = document.getElementById("toggle");
+
+      toggleCheckbox.addEventListener("change", function () {
+        if (toggleCheckbox.checked) {
+          generateButtonLoop();
+        }
+      });
+
+      function generateButtonLoop() {
+        generateButton.click();
+        if (toggleCheckbox.checked) {
+          setTimeout(generateButtonLoop, 100);
+        }
+      }
+    </script>
+  </body>
+</html>

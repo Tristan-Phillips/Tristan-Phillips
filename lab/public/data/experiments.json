@@ -1,15 +1,6 @@
 {
     "experiments": [
         {
-            "title": "Project 1",
-            "description": "description about web project 1",
-            "status": "beta",
-            "tags": ["web"],
-            "tech": ["CSS", "JavaScript"],
-            "demoUrl": "#",
-            "repoUrl": "#"
-        },
-        {
             "title": "Project 2",
             "description": "description about game project 2",
             "status": "live",
@@ -28,11 +19,29 @@
             "repoUrl": "#"
         },
         {
+            "title": "WEB | RNG Pixel Art",
+            "description": "A random pixel art generator 16x16",
+            "status": "live",
+            "tags": ["web"],
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "web/tools/rngpixelgenerator.html",
+            "repoUrl": "https://codepen.io/tristan-phillips/pen/zYVmywX"
+        }, 
+        {
+            "title": "ECON | Paintedd Pennies",
+            "description": "🎨Earn imaginary currency to tilt reality🔥",
+            "status": "pilot",
+            "tags": ["economy"],
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "economy/painteddpennies/index.html",
+            "repoUrl": "#"
+        },
+        {
             "title": "TEXT | Lag",
             "description": "A simple text overlay that displays the text 'Stream might be Laggy'",
             "status": "scratch",
             "tags": ["overlay"],
-            "tech": ["JavaScript", "CSS", "HTML"],
+            "tech": ["CSS", "HTML"],
             "demoUrl": "overlay/text/lag.html",
             "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/lag.html"
         },
@@ -41,7 +50,7 @@
             "description": "A simple text overlay that displays the text 'No'",
             "status": "scratch",
             "tags": ["overlay"],
-            "tech": ["JavaScript", "CSS", "HTML"],
+            "tech": ["CSS", "HTML"],
             "demoUrl": "overlay/text/no.html",
             "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/no.html"
         },

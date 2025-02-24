@@ -19,21 +19,11 @@ async function updateLabCounter() {
         if (experimentalProjects === 0) {
             statusMessage = 'Lab Currently Haunted';
         } else {
-            statusMessage = `${experimentalProjects} Active Experiment${experimentalProjects !== 1 ? 's' : ''}`;
+            statusMessage = `${experimentalProjects} Active`;
             statusMessage += ` (${liveCount} Live)`;
         }
 
         portalItem.textContent = statusMessage;
-
-        // Animate flask based on activity
-        const flask = document.querySelector('#experiment-counter .fa-flask');
-        if (flask) {
-            flask.style.transform = `scale(${1 + (liveCount * 0.1)})`;
-            flask.style.filter = liveCount > 0 
-                ? `hue-rotate(${liveCount * 15}deg)`
-                : 'grayscale(1)';
-        }
-
     } catch (error) {
         console.error('Lab counter error:', error);
         document.querySelector('#experiment-counter .tooltip').textContent =
