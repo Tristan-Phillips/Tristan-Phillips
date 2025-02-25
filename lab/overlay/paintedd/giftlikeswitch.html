@@ -1,69 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Alternating TikTok Widgets</title>
     <style>
-        /* Custom CSS to show only first 3 entries */
-        #rankingContainer .rankUser:nth-of-type(n + 4) {
-            display: none !important;
-        }
-
-        /* Page styling */
-        body {
-            margin: 0;
-            padding: 0;
-            background: transparent;
-        }
-
-        .widget-frame {
+        body { margin: 0; overflow: hidden; background-color: transparent;}
+        .widget { 
             width: 100vw;
             height: 100vh;
-            border: none;
             position: absolute;
             top: 0;
             left: 0;
+            background-color: transparent;
         }
-
-        .active {
-            display: block;
-        }
-
-        .inactive {
-            display: none;
-        }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
-    <iframe 
-        src="https://tikfinity.zerody.one/widget/topgifter?cid=1112305" 
-        class="widget-frame active" 
-        id="topGifterFrame"
-    ></iframe>
-
-    <iframe 
-        src="https://tikfinity.zerody.one/widget/topliker?cid=1112305" 
-        class="widget-frame inactive" 
-        id="topLikerFrame"
-    ></iframe>
+    <iframe src="https://tikfinity.zerody.one/widget/topgifter?cid=1112305" class="widget"></iframe>
+    <iframe src="https://tikfinity.zerody.one/widget/topliker?cid=1112305" class="widget hidden"></iframe>
 
     <script>
-        let showTopGifter = true;
+        const widgets = document.querySelectorAll('.widget');
+        let currentIndex = 0;
 
-        function toggleWidget() {
-            const topGifterFrame = document.getElementById('topGifterFrame');
-            const topLikerFrame = document.getElementById('topLikerFrame');
-
-            showTopGifter = !showTopGifter;
-
-            topGifterFrame.classList.toggle('active', showTopGifter);
-            topGifterFrame.classList.toggle('inactive', !showTopGifter);
-
-            topLikerFrame.classList.toggle('active', !showTopGifter);
-            topLikerFrame.classList.toggle('inactive', showTopGifter);
-        }
-
-        // Initial call and set interval
-        setInterval(toggleWidget, 30000); // 30 seconds
+        setInterval(() => {
+            widgets[currentIndex].classList.add('hidden');
+            currentIndex = (currentIndex + 1) % widgets.length;
+            widgets[currentIndex].classList.remove('hidden');
+        }, 30000);
     </script>
 </body>
 </html>
