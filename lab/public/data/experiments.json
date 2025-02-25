@@ -1,6 +1,15 @@
 {
     "experiments": [
         {
+            "title": "LINK | Paintedd Live Switcher",
+            "description": "@Painted_d Top Liker and Top Gifter for current live switcher (TikTok)",
+            "status": "scratch",
+            "tags": ["overlay"],
+            "tech": ["JavaScript", "CSS", "HTML"],
+            "demoUrl": "overlay/paintedd/giftlikeswitch.html",
+            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/paintedd/giftlikeswitch.html"
+        },
+        {
             "title": "LINK | Paintedd Socials",
             "description": "@Painted_d quick link social dashboard",
             "status": "live",
