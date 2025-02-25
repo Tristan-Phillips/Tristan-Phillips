@@ -16,7 +16,7 @@ class Quiz {
     this.localization = {};
 
     // Get quiz name from URL path
-    const pathParts = window.location.pathname.split('/topics/');
+    const pathParts = window.location.pathname.split('/topic/');
     this.quizName = pathParts.length > 1 
       ? pathParts[1].split('/')[0] 
       : 'defaultQuizName';
@@ -45,13 +45,13 @@ class Quiz {
   }
 
   async loadLocalization() {
-    const response = await fetch('/kb/quiz/public/localization/en.json');
+    const response = await fetch('/quiz/public/localization/en.json');
     if (!response.ok) throw new Error("Failed to load translations");
     this.localization = await response.json();
   }
 
   async loadQuestions() {
-    const response = await fetch(`/kb/quiz/topics/${this.quizName}/public/data/questions.json`);
+    const response = await fetch(`/quiz/topic/${this.quizName}/public/data/questions.json`);
     if (!response.ok) throw new Error("Failed to load questions");
     this.questions = await response.json();
   }
@@ -190,7 +190,7 @@ class Quiz {
   playQuestionAudio() {
     this.stopAudio();
     this.currentAudio = new Audio(
-      `/quiz/${this.quizName}/public/audio/questions/${this.currentQuestion.id}.mp3`
+      `/quiz/topic/${this.quizName}/public/audio/questions/${this.currentQuestion.id}.mp3`
     );
     this.currentAudio.play().catch(console.error);
   }
@@ -198,7 +198,7 @@ class Quiz {
   playAnswerAudio() {
     this.stopAudio();
     this.currentAudio = new Audio(
-      `/quiz/${this.quizName}/public/audio/answers/${this.currentQuestion.id}.mp3`
+      `/quiz/topic/${this.quizName}/public/audio/answers/${this.currentQuestion.id}.mp3`
     );
     this.currentAudio.play().catch(console.error);
   }
