@@ -47,6 +47,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             url: "https://github.com/Tristan-Phillips/nerdquiz.fun",
             website: "https://nerdquiz.fun",
             languages: ["JavaScript", "CSS", "HTML"]
+        },
+        {
+            name: "Paintedd.art",
+            description: "A full site for my mothers art",
+            url: "https://github.com/Tristan-Phillips/Paintedd.art",
+            website: "https://paintedd.art",
+            languages: ["JavaScript", "CSS", "HTML"]
         }
     ];
 

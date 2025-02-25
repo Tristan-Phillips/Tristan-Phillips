@@ -1,0 +1,44 @@
+[
+  {
+    "question": "What terms are often used by governments or organizations to describe poorer countries?",
+    "answer": "North/South, Third World/First World",
+    "id": "ac04cc3f1b3df658b42cae2cddf464c1",
+    "difficulty": "unmarked",
+    "httpsource": "#"
+  },
+  {
+    "question": "What historical factor contributed to the current position of poorer countries?",
+    "answer": "Exploitation through colonialism",
+    "id": "75555a2b805f30f58bec41f2bc4e055b",
+    "difficulty": "unmarked",
+    "httpsource": "#"
+  },
+  {
+    "question": "Which international institutions refer to countries based on wealth and/or human development?",
+    "answer": "World Bank, IMF, United Nations (UN) organizations, The media",
+    "id": "4f8c65de87208ca166861f4761d8215c",
+    "difficulty": "unmarked",
+    "httpsource": "#"
+  },
+  {
+    "question": "How do the World Bank and IMF categorize countries economically?",
+    "answer": "Using economic indicators like GDP per capita, GNP per capita, and GNI per capita",
+    "id": "9bacd52dae800b568c506e35c1e6d7a2",
+    "difficulty": "unmarked",
+    "httpsource": "#"
+  },
+  {
+    "question": "What criteria does the UN use to measure development?",
+    "answer": "Economic indicators and human development indicators",
+    "id": "649de6d2904b21a039316e5588969aa6",
+    "difficulty": "unmarked",
+    "httpsource": "#"
+  },
+  {
+    "question": "What terms do institutions use to distinguish countries by development level?",
+    "answer": "Most developed countries, developed countries, less developed countries, developing countries, least developed countries",
+    "id": "da90a3dc622fc778178ff00da363246f",
+    "difficulty": "unmarked",
+    "httpsource": "#"
+  }
+]

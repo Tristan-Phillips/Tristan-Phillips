@@ -1,0 +1,27 @@
+{
+  "quizzes": {
+    "dva1501": {
+        "title": "🗣️ DVA1501 👂"
+      }
+  },
+  "buttonLabels": {
+    "startQuiz": "Start Quiz",
+    "revealAnswer": "✨ Reveal Answer",
+    "nextQuestion": "⏭ Next Question",
+    "pauseQuiz": "⏸ Pause"
+  },
+  "textDefaults": {
+    "titleText": "NerdQuiz.Fun",
+    "loadingText": "Preparing quiz...",
+    "returnHome": "🏠",
+    "restartQuiz": "🔄",
+    "numberOfQuestions": "Number of Questions",
+    "autoplayQuestions": "Auto-play Questions",
+    "infiniteQuestions": "Infinite",
+    "infiniteSymbol": "∞"
+  },
+  "errorMessages": {
+    "loadQuestions": "Failed to load questions",
+    "loadLocalization": "Failed to load translations"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TRAP.LOL | Knowledge Vault</title>
+    <meta property="og:title" content="TRAP.LOL | Knowledge Vault">
+    <meta property="og:description" content="Crystallized understanding of complex systems">
+    <link rel="stylesheet" href="../public/style/default.css">
+    <link rel="stylesheet" href="public/style/kb.css">
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <h1 class="title">Knowledge Vault<span class="aka">/brain-dump</span></h1>
+            <p class="tagline">Crystallized understanding of complex systems</p>
+        </header>
+
+        <section class="knowledge-grid">
+            <!-- Filter Controls -->
+            <div class="filter-bar">
+                <div class="pill-list" id="filters">
+                    <span class="filter-pill active" data-filter="all">All</span>
+                    <span class="filter-pill" data-filter="cs">CompSci</span>
+                    <span class="filter-pill" data-filter="psych">Psych</span>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="knowledge-search" placeholder="grep knowledge...">
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="knowledge-cards" id="knowledge-cards">
+                <!-- Dynamically loaded from JSON -->
+            </div>
+        </section>
+    </main>
+    <script src="public/script/kb.js"></script>
+</body>
+</html>
