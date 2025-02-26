@@ -207,7 +207,7 @@ No Africans were invited to the conference or had a say in the proceedings.\
 The result of this conference was that parts of Africa were parcelled out to European countries that had the strongest claim to the territories in question.\
 The borders of Africa were drawn according to European spheres of influence.
 
-![Figure 1.1: The borders of Africa after the Berlin Conference in 1885](../../../../other/img/figure1-1-DVA1501-Unit01.png)
+![Figure 1.1: The borders of Africa after the Berlin Conference in 1885](../../../other/img/figure1-1-DVA1501-Unit01.png)
 
 Figure 1.1 is a map that shows how the borders in Africa were drawn after the Berlin Conference in 1885.\
 Note that not all of Africa was under the control of Europe at this point (Oliver 2005:118–129).
@@ -225,7 +225,7 @@ That is why colonization went hand in hand with the establishment of missions in
 Missionaries brought Western-style education to Africa and dispersed Western beliefs.\
 By 1914, almost 90% of Africa was under European control.
 
-![Figure 1.2: The colonisation of Africa – 1914](../../../../other/img/figure1-2-DVA1501-Unit01.png)
+![Figure 1.2: The colonisation of Africa – 1914](../../../other/img/figure1-2-DVA1501-Unit01.png)
 
 Figure 1.2 is a map of Africa in 1914 and gives an indication of colonial influence.\
 The smaller map in the inserted box indicates the influence of Europe before the Berlin Conference.\
@@ -241,7 +241,7 @@ The European countries that had colonies began to prepare their colonies for the
 Slowly but surely, the colonies of Asia and Africa started to gain their independence and freedom.\
 This process was known as decolonization (Boahen 1985).
 
-![Figure 1.3: The decolonisation of Africa](../../../../other/img/figure1-3-DVA1501-Unit01.png)
+![Figure 1.3: The decolonisation of Africa](../../../other/img/figure1-3-DVA1501-Unit01.png)
 
 Figure 1.3 indicates the dates by which African countries became independent.
 
@@ -313,7 +313,7 @@ He argued that the newly independent countries had similar characteristics – t
 They also had strong anticolonial feelings.\
 Sauvy referred to them as the Third World in 1952 and the popular media quickly picked up this term to refer to this new group of countries.
 
-![Figure 1.4: A map of First, Second and Third World countries](../../../../other/img/figure1-4-DVA1501-Unit01.png)
+![Figure 1.4: A map of First, Second and Third World countries](../../../other/img/figure1-4-DVA1501-Unit01.png)
 
 <u>Figure 1.4 is a map of First, Second and Third World countries</u>.
 
@@ -324,7 +324,7 @@ As a result, the capitalist bloc, led by the US, and the communist bloc, led by 
 
 In the end, both blocs established immense spheres of influence in developing countries.
 
-![Figure 1.5: Map of capitalist and communist countries during the Cold War](../../../../other/img/figure1-5-DVA1501-Unit01.png)
+![Figure 1.5: Map of capitalist and communist countries during the Cold War](../../../other/img/figure1-5-DVA1501-Unit01.png)
 
 Figure 1.5 shows the influence of communism and capitalism during the Cold War.\
 The red dots indicate socialist movements that tried to overthrow capitalist regimes.\
@@ -383,7 +383,7 @@ The World Bank refers to
 - low- and middle-income countries as developing economies
 - and upper-middle-income to high-income countries as developed countries (Gbadamosi 2021).
 
-![Figure 1.6: The World Bank’s classification of countries according to income](../../../../other/img/figure1-6-DVA1501-Unit01.png)
+![Figure 1.6: The World Bank’s classification of countries according to income](../../../other/img/figure1-6-DVA1501-Unit01.png)
 
 Figure 1.6 shows the World Bank’s classification of countries according to their income in 2021.
 
@@ -393,34 +393,39 @@ Countries that are in the top quartile of the HDI distribution are seen as devel
 Countries in the bottom quartile are seen as the least developed countries (LDCs).\
 Sometimes, they are also called less developed or underdeveloped countries (Gbadamosi 2021).
 
-![Figure 1.7: Human Development Index country map – 2020](../../../../other/img/figure1-7-DVA1501-Unit01.png)
+![Figure 1.7: Human Development Index country map – 2020](../../../other/img/figure1-7-DVA1501-Unit01.png)
 
 Figure 1.7 shows the HDI map for 2020. Countries that are red are the LDCs.\
 Most LDCs are from Africa. Countries that are dark green are the most developed countries.
 
-The International Monetary Fund also mainly uses economic indicators to
-distinguish between developed and developing countries, especially the following
-three indicators: per capita income level, export diversification and the degree to
-which a country is integrated into the global financial system. Based on these
-indicators, the IMF distinguishes between “advanced”, “emerging” and
-“developing” economies. Consequently, the LDCs are called “developing economy
-countries” by the IMF (World Population Review 2021).
-Those in favour of using these terms argue that the word “developing” is neutral
-and puts most countries of the world in the same boat. Those against using these
-terms argue that they are by no means neutral. They believe that the word
-“developing” implies that there is an ideal state or condition of “being developed”
-and that all countries of the world are making their way towards this condition –
-some faster than others. It sketches a particular view of the world and an
-expectation that there is a state of being or condition that is desirable, worth
-striving for and uniform (or unvarying) and that it is inevitable that all countries
-will eventually reach that condition or state of being. However, note that these
-concepts can be culturally and subjectively determined. For instance, there are
-many communities in the world that live traditionally like their ancestors did before
-them. They live in harmony with nature and take only what they need from their
-environment. They do not feel the need to embrace modern development. They
-also do not see themselves as “less developed”. One must therefore guard against
-stereotyping and judging communities based on First World standards of what is
-seen as developed.
+The International Monetary Fund also mainly uses economic indicators to <u>distinguish between developed and developing countries</u>, especially the following three indicators:
+
+- per capita income level
+- export diversification
+- the degree to which a country is integrated into the global financial system
+
+Based on these indicators, the IMF distinguishes between:
+
+- “advanced”economies
+- “emerging” economies
+- “developing” economies
+
+Consequently, the **LDCs are called “developing economy countries” by the IMF** (World Population Review 2021).
+
+Those in favour of using these terms argue that:
+
+- the word “developing” is neutral and puts most countries of the world in the same boat.
+
+Those against using these terms argue that:
+
+- they are by no means neutral.
+
+**They believe that the word “developing” implies that there is an ideal state or condition of “being developed” and that all countries of the world are making their way towards this condition – some faster than others**.
+
+> **It sketches a particular view of the world and an expectation that there is a state of being or condition that is desirable, worth striving for and uniform (or unvarying) and that it is inevitable that all countries will eventually reach that condition or state of being.**
+
+However, note that these concepts can be culturally and subjectively determined. For instance, there are many communities in the world that live traditionally like their ancestors did before them. They live in harmony with nature and take only what they need from their environment. They do not feel the need to embrace modern development. They also do not see themselves as **“less developed”**. <u>One must therefore guard against stereotyping and judging communities based on First World standards of what is
+seen as developed</u>.
 
 ---
 
@@ -440,24 +445,29 @@ seen as developed.
 
 ## North and South countries
 
-An alternative way of referring to countries that has recently gained wide
-acceptance is the use of the terms “North” and “South”. When we use these terms,
-we reduce the idea of three worlds to two worlds. The capitalist First World
-countries of the West and the old Second World countries are grouped in one
-category, namely, the North. The Third World countries are mainly grouped
-together in another category, the South. Most of the OECD countries, except
-Australia and New Zealand, are in the northern hemisphere. That is why the
-developed countries are often called “the North”. Figure 1.8 indicates developed
-countries in red and developing countries in green. As you can see, most of the
-developed countries are north of the equator while most countries in the South are
-developing countries.
+An alternative way of referring to countries that has recently gained wide acceptance is the use of the terms “North” and “South”.
 
-![Figure 1.8: The North–South divide](../../../../other/img/figure1-8-DVA1501-Unit01.png)
+When we use these terms, we reduce the idea of three worlds to two worlds.
 
-This North–South division is very general and imprecise since Australia and New
-Zealand, which are developed countries, are south of the equator. Also, many
-countries in the North are developing countries. Countries like Afghanistan, Nepal
-and Bhutan are in the northern hemisphere but they are among the LDCs.
+- The capitalist First World countries of the West and the old Second World countries are grouped in one category, namely, the North.
+- The Third World countries are mainly grouped together in another category, the South.
+
+Most of the OECD countries, **except Australia and New Zealand**, are in the northern hemisphere.
+
+That is why the developed countries are often called “the North”.
+
+![Figure 1.8: The North–South divide](../../../other/img/figure1-8-DVA1501-Unit01.png)
+
+Figure 1.8 indicates developed countries in red and developing countries in green.\
+As you can see, most of the developed countries are north of the equator while most countries in the South are developing countries.
+
+This North–South division is very general and imprecise since
+
+> Australia and New Zealand, which are developed countries, are south of the equator.
+
+Also, many countries in the North are developing countries.
+
+> Countries like Afghanistan, Nepal and Bhutan are in the northern hemisphere but they are among the LDCs.
 
 ---
 
@@ -485,23 +495,20 @@ and Bhutan are in the northern hemisphere but they are among the LDCs.
 
 ## Economic Indicators
 
-There are various scientific ways of comparing the levels of development of
-different countries in order to distinguish between more developed and less
-developed countries. The earliest indicators that were used were economic
-indicators. One such indicator is the gross domestic product of a country, that is,
-the total value (in money) of its economic output (i.e., all the things its people grow,
-make and sell). GDP is easy to identify and measure (Todaro 1994:680). It is a
-comprehensive measure, covering the production of consumer goods and services,
-government services and investment goods. However, it does not count a country’s
-income from foreign investments and other important economic criteria.
-Nevertheless, through this single measure, it can be determined whether a country’s
-economy is growing or slacking. GDP is usually used as an indicator in the form of
-GDP per capita, which refers to GDP divided by total mid-year population (World
-Bank 2009), in other words, the total income of the country divided by the number
-of the population.
+There are various scientific ways of comparing the levels of development of different countries in order to distinguish between more developed and less developed countries.
 
-As an indicator of development, GDP per capita has its shortcomings. For instance,
-it does not
+The earliest indicators that were used were economic indicators.
+
+- One such indicator is the gross domestic product of a country, that is, the total value (in money) of its economic output (i.e., all the things its people grow, make and sell). GDP is easy to identify and measure (Todaro 1994:680).
+
+It is a comprehensive measure, covering the production of consumer goods and services, government services and investment goods.
+
+However, it does not count a country’s income from foreign investments and other important economic criteria. Nevertheless, through this single measure, it can be determined whether a country’s economy is growing or slacking.
+
+> GDP is usually used as an indicator in the form of GDP per capita, which refers to GDP divided by total mid-year population (World Bank 2009), in other words, **the total income of the country divided by the number of the population**.
+
+As an indicator of development, GDP per capita has its shortcomings.\
+<u>For instance, it does not</u>:
 
 - indicate whether a country is dependent on one industry (skills, location, fluctuations)
 - include the income from the informal economy and unpaid work (e.g., subsistence farming, bartering)
@@ -510,19 +517,21 @@ it does not
 - record the negative costs of economic growth, like pollution and environmental damage
 - tell us how wealth is distributed in a country or who spends it and what it is spent on
 
-Gross national product is another economic indicator. GNP is basically the same as
-GDP, but it includes a country’s income from foreign investments, in other words,
-how much companies in the country earn from their business in other countries.
-GNP per capita is GNP divided by the total mid-year population (World Bank
-2009).
+> Gross national product is another economic indicator.
 
-The strengths of GNP per capita are that
+<u>GNP is basically the same as GDP</u>, but it includes a country’s income from foreign investments, in other words,
+how much companies in the country earn from their business in other countries.
+
+> GNP per capita is GNP divided by the total mid-year population (World Bank 2009).
+
+The strengths of GNP per capita are that:
 
 - it is easily calculated (compared to social indicators)
 - it takes income generated abroad by industry into account and therefore it is usually seen as a more accurate measure of economic development than GDP
 - it also highlights rising wealth or contraction within a country
 
-GNP per capita has many of the same weaknesses as GDP per capita. Its weaknesses are as follows:
+GNP per capita has many of the **same weaknesses** as GDP per capita.\
+<u>Its weaknesses are as follows</u>:
 
 - It still does not tell us about how income is distributed in a country.
 - It tells us nothing about the quality of life experienced by the majority of the population of a country. As mentioned above, rising levels of GDP or GNP indicate increasing levels of wealth within a country, but that does not necessarily tell us if improved social conditions are experienced, for instance, better education and healthcare.
@@ -530,35 +539,33 @@ GNP per capita has many of the same weaknesses as GDP per capita. Its weaknesses
 - What is actually produced in developing countries does not always have a monetary value. For instance, subsistence farming still constitutes a significant proportion of the productive activities in poor countries, but it is not counted
 - It reflects gender bias. It does not reflect the unpaid work done by women, such as domestic work and childcare. (Daniel Winsbury Sociology 2014)
 
-In recent years, gross national income has become the preferred economic
-indicator. GNI includes aid flows or remittances of salaries earned outside a
-country (Dornan & Regan 2016:19). GNI per capita has been adopted by the
-UNDP as an indicator for the Human Development Index.
+> In recent years, **gross national income has become the preferred economic indicator**.
 
-The World Bank’s classification system is an elaborate one and much more
-complex than a simple contrast between rich and poor. Nonetheless, it generalises
-about conditions within countries and does not allow for division within countries.
-Moreover, it implies that you have to use a classification system based almost
-exclusively on economic criteria and indicators to measure development. An
-example of how using only economic indicators can lead to a misleading picture of
-a country is that of Equatorial Guinea. According to the World Bank, Equatorial
-Guinea is an upper-middle-income country since its GNI per capita was $6 460 in 2019. Nevertheless, its citizens only live to 58,4 years and they have low levels of
+GNI includes aid flows or remittances of salaries earned outside a country (Dornan & Regan 2016:19).
 
-schooling (Developing Economics 2020). Another good example is South Africa.
-South Africa is classified as an upper-middle-income country according to its GNI
-per capita (World Bank 2018b) but in a World Bank report from 2018, it is stated
-that South Africa is the most unequal country in the world (World Bank 2018a).
-As a result, the international development community has looked for other ways to
-indicate the development of a country.
+> GNI per capita has been adopted by the UNDP as an indicator for the Human Development Index.
+
+The World Bank’s classification system is an elaborate one and much more complex than a simple contrast between rich and poor.
+
+Nonetheless, it generalizes about conditions within countries and does not allow for division within countries. Moreover, it implies that you have to use a classification system based almost exclusively on economic criteria and indicators to measure development.
+
+- An example of how using only economic indicators can lead to a misleading picture of a country is that of Equatorial Guinea. According to the World Bank, Equatorial Guinea is an upper-middle-income country since its GNI per capita was $6 460 in 2019. Nevertheless, its citizens only live to 58,4 years and they have low levels of schooling (Developing Economics 2020).
+
+- Another good example is South Africa. South Africa is classified as an upper-middle-income country according to its GNI per capita (World Bank 2018b) but in a World Bank report from 2018, it is stated that South Africa is the most unequal country in the world (World Bank 2018a).
+
+As a result, the international development community has looked for other ways to indicate the development of a country.
 
 ## The Human Development Index
 
-In recognition of the limitations of economic indicators of development and the
-fact that a “person’s access to income … is not the sum total of human endeavour”,
-the UNDP decided to devise a more sophisticated approach. The result was the so-
-called Human Development Index. The HDI was developed by Amartya Sen and
-Mahbud ul Had in 1990 and combined three dimensions, namely, a long and
-healthy life, knowledge and a decent standard of living.
+In recognition of the limitations of economic indicators of development and the fact that a “person’s access to income … is not the sum total of human endeavour”, the UNDP decided to devise a more sophisticated approach.
+
+> The result was the so-called Human Development Index.
+
+The HDI was **developed by Amartya Sen and Mahbud ul Had in 1990** and combined three dimensions, namely:
+
+- a long and healthy life
+- knowledge
+- a decent standard of living.
 
 1. **Long and healthy life** - The indicator that is used to measure a long and healthy life is life expectancy. Life expectancy is the number of years a new-born infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life (World Bank 2009). The life expectancy of a country is converted into a life expectancy index. South Africa’s life expectancy at birth index is 64.1.
 2. **Knowledge** - There are two indicators for knowledge, namely, mean years of schooling and expected years of schooling.
@@ -576,51 +583,57 @@ healthy life, knowledge and a decent standard of living.
 
 3. Decent standard of living. Before 2010, a country’s GDP per capita was used to indicate a decent standard of living; this was replaced with GNI per capita. South Africa’s GNI per capita is 12,129 (UNDP 2020:344).
 
-A combined score of the indexes of these three dimensions is calculated to
-produce a figure between 0 and 1, calculated to three decimal places. The nearer a
-country is to the upper figure, the higher its assumed level of human development.
-The UNDP produces an annual report called the Human development report that
-indicates the HDI for that year (UNDP 2020)
+A combined score of the indexes of these three dimensions is calculated to produce a figure **between 0 and 1**, **calculated to three decimal places**.
 
-The HDI is divided into four groups of countries according to their scores, namely:
+The nearer a country is to the upper figure, the higher its assumed level of human development.
+
+The UNDP produces an annual report called the Human development report that indicates the HDI for that year (UNDP 2020)
+
+<u>The HDI is divided into four groups of countries according to their scores, namely</u>:
 
 1.  very high human development – 0,898
 2.  high human development – 0,753
 3.  medium human development – 0,631
 4.  low human development – 0,513
 
-The countries are then ranked from first to last in the world according to their
-scores. In 2020, Norway, with a score of 0,957, ranked first and Niger, with a score
-of 0,394, ranked last (189th position) (UNDP 2020:345). Note that Niger’s MYS
-was 6,5 and its EYS was 2,1. Its low literacy rate landed it at the bottom of the
-rankings. When we look at Equatorial Guinea again, we see that it ranked 145th in
-2020 because of its poor health and education services. It is therefore clear that the
-HDI gives a more accurate picture of human development than income alone.
-Nevertheless, note that South Africa ranked 114th with a score of 0,709 in 2020
-and therefore fell in the category of high human development. This score obscures
-the fact that South Africa is the most unequal country in the world (Developing
-Economics 2020; UNDP 2020:343–345). So, the HDI might work better to give us
-a global picture of development, but it is by no means completely accurate. The
-HDI is restricted by a lack of complete, accurate, comparable, updated data and
-does not reflect environmental degradation.
+The countries are then ranked from first to last in the world according to their scores.
+
+In 2020, Norway, with a score of 0,957, ranked first and Niger, with a score of 0,394, ranked last (189th position) (UNDP 2020:345).
+
+Note that Niger’s MYS was 6,5 and its EYS was 2,1. Its low literacy rate landed it at the bottom of the rankings.
+
+When we look at Equatorial Guinea again, we see that it ranked 145th in 2020 because of its poor health and education services.
+
+It is therefore clear that the **HDI gives a more accurate picture of human development than income alone**.
+
+Nevertheless, note that South Africa ranked 114th with a score of 0,709 in 2020 and therefore fell in the category of high human development.
+
+This score obscures the fact that South Africa is the most unequal country in the world (Developing Economics 2020; UNDP 2020:343–345). So, the H**DI might work better to give us a global picture of development, but it is by no means completely accurate**.
+
+The HDI is restricted by a lack of:
+
+- complete
+- accurate
+- comparable
+- updated data
+
+and does not reflect environmental degradation.
 
 ## Under-five Morality Rate (U5MR)
 
-The death rate of children younger than five years, also known as the under-five
-mortality rate, is based on death and birth data. It indicates the probability of a
-newborn dying before its fifth birthday. One of the major limitations of the U5MR
-as a development indicator is a lack of reliable and accurate death and birth data to
-calculate it, especially in less developed countries. The rate is expressed as deaths
-per 1 000 live births. The U5MR for poor countries was about 99 deaths per 1 000
-births for the period 2010 to 2015, compared to 7 deaths per 1 000 births for
-richer nations in the same period (United Nations 2013). Sub-Saharan Africa had
-the highest U5MR rate in 2015.
+The death rate of children younger than five years, also known as the under-five mortality rate, is based on death and birth data.
 
-The Sustainable Development Goals (SDGs), which replaced the Millennium
-Development Goals (MDGs), set a global target for the U5MR at 25 or fewer
-deaths per 1 000 live births by 2030.
+It indicates the probability of a newborn dying before its fifth birthday.
 
-A high U5MR is usually linked to factors such as:
+**One of the major limitations of the U5MR as a development indicator** is a lack of reliable and accurate death and birth data to calculate it, especially in less developed countries. The rate is expressed as deaths per 1 000 live births.
+
+The U5MR for poor countries was about 99 deaths per 1 000 births for the period 2010 to 2015, compared to 7 deaths per 1 000 births for richer nations in the same period (United Nations 2013).
+
+> Sub-Saharan Africa had the highest U5MR rate in 2015.
+
+The Sustainable Development Goals (SDGs), which replaced the Millennium Development Goals (MDGs), set a global target for the U5MR at 25 or fewer deaths per 1 000 live births by 2030.
+
+<u>A high U5MR is usually linked to factors such as</u>:
 
 - poor access to safe water and sanitation
 - undernutrition
@@ -628,17 +641,13 @@ A high U5MR is usually linked to factors such as:
 - a lack of available, accessible and good-quality primary healthcare services
 - poor educational attainment of parents (especially mothers)
 
-For these reasons, the U5MR is a sensitive indicator of a country’s health and
-nutritional status, primary healthcare services and social and educational progress.
-In addition, it is possible to disaggregate (break down statistically) the U5MR for
-different subgroups, for example, gender, race, ethnicity or region to see which
-subsections are in the greatest need of assistance to improve the survival potential
-of children.
+For these reasons, the U5MR is a sensitive indicator of a country’s health and nutritional status, primary healthcare services and social and educational progress.
 
-As shown, development indicators have both strengths and limitations. The use of
-each indicator depends on why it is used, who uses it, how it is used and probably
-when it is used. The fact that indicators have shortcomings does not mean that
-they have no value. They do, however, need to be used with circumspection.
+In addition, it is possible to disaggregate (break down statistically) the U5MR for different subgroups, for example, gender, race, ethnicity or region to see which
+subsections are in the greatest need of assistance to improve the survival potential of children.
+
+As shown, development indicators have both strengths and limitations. The use of each indicator depends on why it is used, who uses it, how it is used and probably
+when it is used. **The fact that indicators have shortcomings does not mean that they have no value**. They do, however, need to be used with circumspection.
 
 ---
 
@@ -658,21 +667,12 @@ they have no value. They do, however, need to be used with circumspection.
 
 # Conclusion
 
-It is clear from the discussion that development is not just about economic
-development but is also about human development. The indicators that we use to
-measure development in a country only give us a partial view of the well-being of
-the people in that county. It is clear that there is still a lot of room for improving
-development indicators. We also looked at the way in which countries are classified.
-In future you will understand what is meant by “least developed countries” when
-you come across this term in the news.
+It is clear from the discussion that development is not just about economic development but is also about human development. The indicators that we use to measure development in a country only give us a partial view of the well-being of the people in that county. It is clear that there is still a lot of room for improving development indicators. We also looked at the way in which countries are classified.
 
-We also looked at terms that are used to refer to countries. Some of these terms are
-more useful than others. There is no wrong or right way to refer to countries. The
-term that you decide to use will be based on personal preference. When you read
-about poorer countries in the media, you will now understand what is meant by
-terms such as “First World country”, “the North”, “the South” and “the Third
-World”.
+In future you will understand what is meant by “least developed countries” when you come across this term in the news.
 
-Lastly, you have gained an understanding that developing countries have long
-histories of exploitation. Developing countries’ infrastructure, language and
-institutions were all installed as a result of the experience of colonialism.
+We also looked at terms that are used to refer to countries. Some of these terms are more useful than others.
+
+There is no wrong or right way to refer to countries. The term that you decide to use will be based on personal preference. When you read about poorer countries in the media, you will now understand what is meant by terms such as “First World country”, “the North”, “the South” and “the Third World”.
+
+Lastly, you have gained an understanding that developing countries have long histories of exploitation. Developing countries’ infrastructure, language and institutions were all installed as a result of the experience of colonialism.
