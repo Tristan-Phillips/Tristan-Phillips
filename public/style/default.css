@@ -306,6 +306,62 @@ h2 {
     margin-right: 0.3rem;
 }
 
+/* Live Projects */
+.live-projects {
+    position: relative;
+    margin: 4rem auto;
+}
+
+.live-project-card {
+    background: var(--card-bg);
+    border: 2px solid var(--accent-red);
+    position: relative;
+    overflow: hidden;
+}
+
+.live-project-card::before {
+    content: 'LIVE';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--accent-red);
+    color: var(--text-light);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.live-tech-pill {
+    background: var(--dark-bg);
+    color: var(--accent-red);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid var(--accent-red);
+    margin: 0.25rem;
+}
+
+.live-project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.live-project-links a {
+    color: var(--accent-red);
+    text-decoration: none;
+    border: 1px solid var(--accent-red);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.live-project-links a:hover {
+    background: var(--accent-red);
+    color: var(--dark-bg);
+}
+
 /* Lab Portal Section */
 .lab-portal {
     margin: 2rem auto;
@@ -400,7 +456,6 @@ h2 {
     max-width: 400px;
     perspective: 1000px;
     margin: 2px;
-    padding: 0 1rem;
 }
 
 .neural-frame {
