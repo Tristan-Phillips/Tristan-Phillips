@@ -1,3 +1,54 @@
+// ======== SKILLS SECTION FUNCTIONALITY ======== //
+async function initializeSkills() {
+    // Fetch last GitHub commit date
+    const getLastCommitDate = async () => {
+        try {
+            const response = await fetch('https://api.github.com/users/Tristan-Phillips/events');
+            if (!response.ok) throw new Error('GitHub API error');
+
+            const events = await response.json();
+            const pushEvents = events.filter(e => e.type === 'PushEvent');
+
+            if (!pushEvents.length) return new Date('2000-01-01');
+
+            const lastCommit = pushEvents[0].created_at;
+            return new Date(lastCommit);
+
+        } catch (error) {
+            console.error('GitHub commit fetch failed:', error);
+            return new Date(); // Fallback to today's date
+        }
+    };
+    
+     // Update days since and memory bar
+     const updateSkillsSection = async () => {
+        const lastCommitDate = await getLastCommitDate();
+        const currentDate = new Date();
+
+        // Calculate days difference
+        const diffMs = currentDate - lastCommitDate;
+        const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+        // Update display
+        document.getElementById('days-since-refresh').textContent = diffDays;
+
+        // Calculate memory bar width (100% - days, min 10%)
+        const memoryWidth = Math.max(10, 100 - diffDays) + '%';
+        const memoryBar = document.querySelector('.memory-bar');
+        if (memoryBar) {
+            memoryBar.style.width = memoryWidth;
+            memoryBar.title = `Last commit: ${lastCommitDate.toLocaleDateString()}`;
+        }
+    };
+    // Initial setup
+    updateSkillsSection().catch(console.error);
+
+    // Auto-update every hour
+    setInterval(() => {
+        updateSkillsSection().catch(console.error);
+    }, 3600000); // 1 hour
+}
+
 async function updateLabCounter() {
     try {
         const portalItem = document.querySelector('#experiment-counter .tooltip');
@@ -155,6 +206,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderGitHubProjects();
     renderLiveProjects();
     await updateLabCounter();
+    await initializeSkills();
 
     // Education Cards Animation
     document.querySelectorAll('.edu-card').forEach((card, index) => {

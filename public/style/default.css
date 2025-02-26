@@ -190,6 +190,178 @@ h2 {
     margin-right: auto;
 }
 
+/* Skills */
+.skills {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-purple);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.skill-memory {
+    height: 8px;
+    background: var(--dark-bg);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.memory-bar {
+    height: 100%;
+    background: linear-gradient(90deg, 
+        var(--primary-green) 0%, 
+        var(--primary-purple) 100%);
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.memory-flicker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg,
+        transparent 25%,
+        rgba(255,255,255,0.1) 50%,
+        transparent 75%);
+    animation: flicker 2s infinite;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.skill-chip {
+    background: var(--dark-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.skill-chip[data-tier="wizard"] {
+    border: 2px solid var(--primary-green);
+    color: var(--primary-green);
+}
+
+.skill-chip[data-tier="apprentice"] {
+    border: 2px solid var(--primary-purple);
+    color: var(--primary-purple);
+    opacity: 0.9;
+}
+
+.skill-chip[data-tier="rusty"] {
+    border: 2px dashed var(--primary-purple);
+    color: var(--primary-purple);
+    opacity: 0.7;
+}
+
+.skill-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(241, 169, 255, 0.2);
+}
+
+/* Server Hosting Section */
+.hosting-card {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-green);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.server-cluster {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.server-cluster i {
+    color: var(--primary-purple);
+    transition: transform 0.3s ease;
+}
+
+.server-cluster i:hover {
+    transform: rotate(15deg);
+}
+
+.hosting-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.hosting-pill {
+    background: var(--dark-bg);
+    color: var(--primary-green);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    border: 1px solid var(--primary-green);
+    font-size: 0.8rem;
+}
+
+.disclaimer {
+    text-align: center;
+    color: var(--primary-purple);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.1; }
+}
+
+/* Web Hosting xp */
+.glitch {
+    animation: glitch 0.5s infinite alternate;
+}
+
+.domain-pills {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.terminal-snippet {
+    background: var(--dark-bg);
+    border: 1px solid var(--primary-purple);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: 'Courier Prime', monospace;
+}
+
+.prompt {
+    color: var(--primary-green);
+}
+
+.terminal-output {
+    color: var(--primary-purple);
+    margin-top: 0.5rem;
+}
+
 /* Footer */
 .footer {
     text-align: center;
