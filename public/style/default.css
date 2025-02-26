@@ -39,6 +39,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease;
+    z-index: 1001;
 }
 
 #load-time::after {
@@ -51,6 +52,8 @@ body {
 #load-sorcery.visible {
     opacity: 1;
 }
+
+/* Effect */
 
 .terminal-cursor {
     display: inline-block;
