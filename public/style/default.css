@@ -24,6 +24,55 @@ body {
     overflow-x: hidden;
 }
 
+/* Load Time Notification */
+#load-sorcery {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--dark-bg);
+    border: 1px solid var(--primary-purple);
+    color: var(--primary-green);
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--border-radius);
+    font-family: 'Courier Prime', monospace;
+    box-shadow: 0 0 15px rgba(241, 169, 255, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+#load-time::after {
+    content: attr(data-suffix);
+    font-size: 0.8em;
+    color: var(--primary-purple);
+    margin-left: 0.1rem;
+}
+
+#load-sorcery.visible {
+    opacity: 1;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--primary-green);
+    margin-left: 0.5rem;
+    animation: blink 1s infinite;
+}
+
+.glitch-text {
+    animation: glitch 0.5s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(1px, -1px); }
+    60% { transform: translate(-1px, -1px); }
+    80% { transform: translate(1px, 1px); }
+}
+
 /* Social Navigation */
 .social-nav {
     position: fixed;

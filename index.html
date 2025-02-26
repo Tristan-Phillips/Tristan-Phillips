@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="TRAP.LOL | Tristan Phillips">
     <meta property="og:description" content="Contains traces of irony and hungry ghosts.">
-    <meta property="og:image" content="https://trap.lol/public/img/pp-trap.png"> 
+    <meta property="og:image" content="https://trap.lol/public/img/pp-trap.webp"> 
     <link rel="stylesheet" href="public/style/default.css">
+    <link rel="preload" as="image" href="/public/img/pp-trap.webp" media="(max-width: 800px)">
     <script src="public/script/default.js" defer></script>
     <script src="https://kit.fontawesome.com/29c25c094f.js" crossorigin="anonymous"></script>
     <title>Tristan (TRAP) Phillips | Portfolio</title>
@@ -27,7 +28,7 @@
     <main class="container">
         <header class="hero">
             <div class="avatar-container">
-                <img src="public/img/pp-trap.png" alt="Tristan avatar" class="avatar">
+                <img src="public/img/pp-trap.webp" alt="Tristan avatar" class="avatar">
             </div>
             <h1 class="title">Tristan Phillips<span class="aka">TRAP</span></h1>
             <p class="tagline">Perpetual learner trying to make sense of it all</p>
@@ -273,5 +274,10 @@
             <p><a href="https://blog.trap.lol" target="_blank" aria-label="Blog"><i class="fas fa-blog"></i></a></p>
         </footer>
     </main>
+
+    <div id="load-sorcery" class="hidden">
+        <span class="glitch-text">⏳</span> 
+        Page conjured in <span id="load-time">0</span>
+    </div>
 </body>
 </html>

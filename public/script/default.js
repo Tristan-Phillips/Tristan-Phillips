@@ -1,3 +1,66 @@
+function trackLoadTime() {
+    const loadNotice = document.getElementById('load-sorcery');
+    const loadTimeDisplay = document.getElementById('load-time');
+    let hasReported = false;
+
+    // Method 1: PerformanceObserver
+    const observer = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        const navEntry = entries.find(e => e.entryType === 'navigation');
+        processEntry(navEntry);
+    });
+
+    // Method 2: Fallback check on load
+    window.addEventListener('load', () => {
+        const entries = performance.getEntriesByType('navigation');
+        const navEntry = entries[0];
+        if (!hasReported) processEntry(navEntry);
+    });
+
+    function processEntry(navEntry) {
+        if (!navEntry || hasReported) return;
+
+        // Ensure valid load completion
+        if (navEntry.loadEventEnd === 0) {
+            setTimeout(() => processEntry(navEntry), 100);
+            return;
+        }
+
+        const loadDuration = navEntry.duration.toFixed(1);
+        if (loadDuration <= 0) return;
+
+        loadTimeDisplay.textContent = loadDuration;
+        loadTimeDisplay.dataset.suffix = 'ms';
+        loadNotice.classList.add('visible');
+
+        setTimeout(() => {
+            loadNotice.classList.remove('visible');
+            observer.disconnect();
+            hasReported = true;
+        }, 2000);
+    }
+
+    observer.observe({ type: 'navigation', buffered: true });
+}
+
+function trackLargestResource() {
+    const observer = new PerformanceObserver((list) => {
+        const entries = list.getEntries()
+            .filter(e => e.initiatorType === 'img')
+            .sort((a,b) => b.size - a.size);
+
+        if (entries.length) {
+            const slowest = entries[0];
+            console.log(`Largest resource: ${slowest.name} (${slowest.size/1000}KB)`);
+        }
+    });
+
+    observer.observe({
+        type: 'resource',
+        buffered: true
+    });
+}
+
 // ======== SKILLS SECTION FUNCTIONALITY ======== //
 async function initializeSkills() {
     // Fetch last GitHub commit date
@@ -207,6 +270,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderLiveProjects();
     await updateLabCounter();
     await initializeSkills();
+    trackLoadTime();
+    trackLargestResource();
 
     // Education Cards Animation
     document.querySelectorAll('.edu-card').forEach((card, index) => {
