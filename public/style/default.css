@@ -306,148 +306,19 @@ h2 {
     margin-right: 0.3rem;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .social-nav {
-        top: 1rem;
-        left: var(--spacing);
-        transform: none;
-        width: auto;
-        background: var(--dark-bg);
-        padding: 0.5rem;
-        border-radius: 0 var(--border-radius) var(--border-radius) 0;
-        box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-    }
-
-    .social-nav a {
-        font-size: 1.3rem;
-    }
-
-    .hero {
-        margin-top: 3rem;
-        padding-top: 1.5rem;
-    }
-
-    .avatar {
-        width: 120px;
-        height: 120px;
-        margin-top: 1rem;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .lab-portal {
-        margin: 1.5rem auto;
-        perspective: none;
-    }
-
-    .portal-card {
-        padding: 1rem;
-        border-width: 1px;
-    }
-
-    .portal-item {
-        font-size: 1.25rem;
-    }
-
-    .portal-button {
-        font-size: 0.9rem;
-        padding: 0.75rem 1rem;
-    }
-
-    /* Simplify animations for mobile */
-    @media (prefers-reduced-motion: no-preference) {
-        .portal-item {
-            transition: transform 0.2s ease;
-        }
-
-        .portal-item:active {
-            transform: scale(1.1);
-        }
-    }
-}
-
-/* Live Projects */
-.live-projects {
-    position: relative;
-    margin: 4rem auto;
-}
-
-.live-project-card {
-    background: var(--card-bg);
-    border: 2px solid var(--accent-red);
-    position: relative;
-    overflow: hidden;
-}
-
-.live-project-card::before {
-    content: 'LIVE';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--accent-red);
-    color: var(--text-light);
-    padding: 0.3rem 0.8rem;
-    font-size: 0.7rem;
-    font-weight: bold;
-}
-
-.live-tech-pill {
-    background: var(--dark-bg);
-    color: var(--accent-red);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    border: 1px solid var(--accent-red);
-    margin: 0.25rem;
-}
-
-.live-project-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.live-project-links a {
-    color: var(--accent-red);
-    text-decoration: none;
-    border: 1px solid var(--accent-red);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.live-project-links a:hover {
-    background: var(--accent-red);
-    color: var(--dark-bg);
-}
-
 /* Lab Portal Section */
 .lab-portal {
     margin: 2rem auto;
     max-width: 800px;
     perspective: 1000px;
-    padding: 0 1rem; 
+    padding: 0 1rem;
 }
 
 .portal-card {
     background: var(--card-bg);
     border: 2px solid var(--primary-purple);
     border-radius: var(--border-radius);
-    padding: 1.5rem; 
+    padding: 1.5rem;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
@@ -467,21 +338,22 @@ h2 {
 .portal-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 1rem;
-    margin: 1rem 0; 
+    margin: 1rem 0;
 }
 
 .portal-item {
     position: relative;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
+    transform: translateZ(0);
 }
 
 .portal-item:hover {
     color: var(--primary-green);
-    animation: glitch 0.3s infinite;
+    animation: glitch 0.3s forwards;
 }
 
 .portal-button {
@@ -510,9 +382,432 @@ h2 {
     animation: blink 1s infinite;
 }
 
+/* Portal Grid Sections */
+.portal-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+/* Neural Portal Section */
+.neural-portal-section {
+    flex: 1 1 400px;
+    min-width: 300px;
+    max-width: 400px;
+    perspective: 1000px;
+    margin: 2px;
+}
+
+.neural-frame {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-purple);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.neural-frame:hover {
+    transform: rotateY(5deg) rotateX(2deg);
+}
+
+.synaptic-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(177, 255, 159, 0.1) 0%,
+        rgba(241, 169, 255, 0.05) 50%,
+        transparent 100%
+    );
+    animation: synapse-flow 4s linear infinite;
+}
+
+.neural-gateway {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.neural-spinner {
+    position: relative;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.neural-spinner i {
+    color: var(--primary-purple);
+    filter: drop-shadow(0 0 8px rgba(241, 169, 255, 0.4));
+    animation: neuron-float 2s ease-in-out infinite;
+}
+
+/* Neural Icon Enhancements */
+.neuron-core i {
+    filter: drop-shadow(0 0 12px var(--primary-purple));
+    animation: neuron-float 2s ease-in-out infinite, 
+               neuron-glitch 3s infinite;
+}
+
+.neuro-particles {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+}
+
+.particle {
+    position: absolute;
+    background: var(--primary-green);
+    border-radius: 50%;
+    animation: particle-orbit 4s linear infinite;
+}
+
+.synapse-cluster {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.synapse {
+    position: absolute;
+    background: var(--primary-purple);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    animation: synapse-blink 2s infinite;
+}
+
+.axons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.axon {
+    position: absolute;
+    border: 1px solid var(--primary-green);
+    opacity: 0.2;
+    animation: axon-pulse 3s infinite, 
+               axon-flow 4s linear infinite;
+}
+
+/* Quiz Portal Section */
+.quiz-portal-section {
+    flex: 1 1 400px;
+    min-width: 300px;
+    max-width: 400px;
+    perspective: 1000px;
+    margin: 2px;
+}
+
+.quiz-frame {
+    background: var(--card-bg);
+    border: 2px solid var(--accent-red);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.quiz-frame:hover {
+    transform: rotateY(-5deg) rotateX(2deg);
+}
+
+.circuit-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 159, 159, 0.1) 0%,
+        rgba(255, 169, 169, 0.05) 50%,
+        transparent 100%
+    );
+    animation: circuit-flow 4s linear infinite;
+}
+
+.quiz-gateway {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.quiz-spinner {
+    position: relative;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-spinner i {
+    color: var(--accent-red);
+    filter: drop-shadow(0 0 8px rgba(255, 169, 169, 0.4));
+    animation: quiz-float 2s ease-in-out infinite;
+}
+
+.paths {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.path {
+    position: absolute;
+    border: 1px solid var(--primary-green);
+    opacity: 0.2;
+    animation: path-pulse 3s infinite;
+}
+
+.neural-status, .quiz-status {
+    text-align: center;
+}
+
+.pulse-text, .quiz-pulse {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    display: block;
+    animation: text-pulse 2s ease-in-out infinite;
+}
+
+.post-count, .quiz-count {
+    color: var(--primary-purple);
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Keyframe Animations */
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+@keyframes neuron-float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+@keyframes axon-pulse {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.4; }
+}
+
+@keyframes text-pulse {
+    0%, 100% { opacity: 0.8; text-shadow: 0 0 5px transparent; }
+    50% { opacity: 1; text-shadow: 0 0 10px var(--primary-green); }
+}
+
+@keyframes synapse-flow {
+    0% { transform: translate(-100%, -100%); }
+    100% { transform: translate(100%, 100%); }
+}
+
+@keyframes circuit-flow {
+    0% { transform: translate(100%, 100%); }
+    100% { transform: translate(-100%, -100%); }
+}
+
+@keyframes quiz-float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(-5deg); }
+}
+
+@keyframes path-pulse {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.4; }
+}
+
+@keyframes quiz-text-pulse {
+    0%, 100% { opacity: 0.8; text-shadow: 0 0 5px transparent; }
+    50% { opacity: 1; text-shadow: 0 0 10px var(--accent-red); }
+}
+
+/* Neural Animations */
+@keyframes neuron-glitch {
+    0%, 100% { transform: translate(0,0); opacity: 1; }
+    95% { transform: translate(0,0); opacity: 1; }
+    96% { transform: translate(-2px, 1px); opacity: 0.8; }
+    97% { transform: translate(3px, -1px); opacity: 0.9; }
+    98% { transform: translate(-1px, 2px); opacity: 0.85; }
+}
+
+@keyframes particle-orbit {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+@keyframes synapse-blink {
+    0%, 100% { opacity: 0; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.4); }
+}
+
+@keyframes axon-flow {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+}
+
+@keyframes core-pulse {
+    0%, 100% { opacity: 0.1; transform: scale(1); }
+    50% { opacity: 0.2; transform: scale(1.2); }
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .portal-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .neural-portal-section,
+    .quiz-portal-section {
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .neural-frame,
+    .quiz-frame {
+        transform: none !important;
+    }
+
+    /* Neural Portal Mobile Optimizations */
+    .neuro-particles { 
+        display: none; 
+    }
+
+    .synapse { 
+        animation-duration: 3s; 
+    }
+
+    .neuron-core i { 
+        filter: drop-shadow(0 0 6px var(--primary-purple)); 
+    }
+
+    /* Quiz Portal Mobile Adjustments */
+    .quiz-spinner {
+        font-size: 2.5rem;
+    }
+
+    .quiz-pulse {
+        font-size: 1rem;
+    }
+
+    .quiz-count {
+        font-size: 0.8rem;
+    }
+
+    /* General Mobile Tweaks */
+    .portal-button {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .neural-spinner {
+        font-size: 2.5rem;
+    }
+
+    .pulse-text {
+        font-size: 1rem;
+    }
+
+    .post-count {
+        font-size: 0.8rem;
+    }
+}
+
+/* Additional Global Animations */
+@keyframes glitch {
+    0%, 100% { transform: translate(0); opacity: 1; }
+    10% { transform: translate(-1px, 1px); opacity: 0.9; }
+    20% { transform: translate(2px, -1px); opacity: 0.95; }
+    30% { transform: translate(-1px, 0); opacity: 0.9; }
+    40% { transform: translate(1px, 1px); opacity: 0.95; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Completion of previously truncated styles */
+.axon:nth-child(1) {
+    top: 20%;
+    left: -10%;
+    width: 120%;
+    animation-delay: 0.5s;
+}
+
+.axon:nth-child(2) {
+    top: 50%;
+    left: -20%;
+    width: 140%;
+    animation-delay: 1s;
+}
+
+.axon:nth-child(3) {
+    top: 80%;
+    left: -5%;
+    width: 110%;
+    animation-delay: 1.5s;
+}
+
+.path:nth-child(1) {
+    top: 20%;
+    right: -10%;
+    width: 120%;
+    animation-delay: 0.5s;
+}
+
+.path:nth-child(2) {
+    top: 50%;
+    right: -20%;
+    width: 140%;
+    animation-delay: 1s;
+}
+
+.path:nth-child(3) {
+    top: 80%;
+    right: -5%;
+    width: 110%;
+    animation-delay: 1.5s;
+}
+
+/* Particle Positioning */
+.p1 { width: 3px; height: 3px; animation-delay: 0s; }
+.p2 { width: 2px; height: 2px; animation-delay: 1s; }
+.p3 { width: 4px; height: 4px; animation-delay: 2s; }
+
+/* Synapse Cluster Positioning */
+.s1 { top: 15%; left: 20%; }
+.s2 { top: 70%; left: 80%; }
+.s3 { top: 40%; left: 65%; }
+
+/* Final Completion */
+.quiz-pulse {
+    animation: quiz-text-pulse 2s ease-in-out infinite;
 }
 
 .portal-item:active {
@@ -521,7 +816,6 @@ h2 {
 
 @media (hover: hover) {
     .portal-item:hover {
-        color: var(--primary-green);
         animation: glitch 0.3s infinite;
     }
 }
