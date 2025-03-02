@@ -1,97 +1,131 @@
-// Sort quizzes with active first, then alphabetical
-function sortQuizzes(quizzes) {
-  return [...quizzes].sort((a, b) => {
-    // Active quizzes first
-    if (a.status === "active" && b.status !== "active") return -1;
-    if (b.status === "active" && a.status !== "active") return 1;
-    // Alphabetical order for same status
-    return a.title.localeCompare(b.title);
-  });
-}
-
-async function loadQuizzes() {
-  try {
-    const response = await fetch("public/data/quizzes.json");
-    const data = await response.json();
-    const sortedQuizzes = sortQuizzes(data.quizzes);
-    renderQuizzes(sortedQuizzes);
-  } catch (error) {
-    console.error("Error loading quizzes:", error);
-    document.getElementById("quiz-container").innerHTML =
-      '<p class="error">Failed to load quizzes. Please try again later.</p>';
-  }
-}
-
-function renderQuizzes(quizzes) {
-  const container = document.getElementById("quiz-container");
-  let html = "";
-
-  for (const quiz of quizzes) {
-    let audioSupportText = "";
-    if (quiz.status === "active") {
-      switch (quiz.audioSupport) {
-        case "full":
-          audioSupportText = "Full Audio Support";
-          break;
-        case "half":
-          audioSupportText = "Partial Audio Support";
-          break;
-        case "none":
-          audioSupportText = "No Audio Support";
-          break;
-        default:
-          audioSupportText = "";
+document.addEventListener('DOMContentLoaded', async () => {
+    const LOADING_DELAY = 300;
+    const startTime = Date.now();
+  
+    const loadingOverlay = document.getElementById('loading-overlay');
+    const container = document.getElementById('categories-container');
+  
+    try {
+      const response = await fetch('/quiz/public/data/quizzes.json');
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      const data = await response.json();
+  
+      const elapsed = Date.now() - startTime;
+      const remainingDelay = Math.max(LOADING_DELAY - elapsed, 0);
+  
+      await new Promise(resolve => setTimeout(resolve, remainingDelay));
+      renderCategories(data.categories);
+    } catch (error) {
+      console.error('Knowledge matrix initialization failed:', error);
+      showErrorState(error);
+    } finally {
+      loadingOverlay.style.opacity = '0';
+      setTimeout(() => (loadingOverlay.style.display = 'none'), 300);
+    }
+  
+    function renderCategories(categories) {
+      container.innerHTML = '';
+      const fragment = document.createDocumentFragment();
+  
+      categories.forEach((category) => {
+        const card = createCategoryCard(category);
+        fragment.appendChild(card);
+      });
+  
+      container.appendChild(fragment);
+      initCategoryInteractions();
+    }
+  
+    function createCategoryCard(category) {
+      const card = document.createElement('div');
+      card.className = `category-card ${category.status}`;
+  
+      // Add link wrapper only for active categories
+      if (category.status === 'active') {
+        const link = document.createElement('a');
+        link.href = category.href || '#';
+        link.className = 'card-link';
+        link.setAttribute('aria-label', `Access ${category.title} content`);
+        card.appendChild(link);
+      }
+  
+      const status = document.createElement('div');
+      status.className = 'category-status';
+      status.textContent = category.status === 'active' ? 'Online' : 'Under Development';
+      status.dataset.status = category.status;
+  
+      const icon = document.createElement('div');
+      icon.className = 'category-icon';
+      icon.textContent = category.icon;
+      icon.setAttribute('aria-hidden', 'true');
+  
+      const title = document.createElement('h3');
+      title.className = 'category-title';
+      title.id = `category-${category.id}-title`;
+      title.textContent = category.title;
+  
+      const description = document.createElement('p');
+      description.className = 'category-desc';
+      description.textContent = category.description;
+  
+      card.prepend(status, icon, title, description);
+      return card;
+    }
+  
+    function initCategoryInteractions() {
+      // Active card interaction
+      document.querySelectorAll('.category-card.active').forEach((card) => {
+        card.addEventListener('click', (e) => {
+          if (!e.target.closest('.card-link')) {
+            e.preventDefault();
+            showTemporaryMessage('🧠 Activating knowledge pathways...');
+            card.querySelector('.card-link').click();
+          }
+        });
+      });
+  
+      // Pending card hover effect
+      document.querySelectorAll('.category-card.pending').forEach((card) => {
+        card.addEventListener('mouseenter', () => handleCardHover(card, true));
+        card.addEventListener('mouseleave', () => handleCardHover(card, false));
+      });
+  
+      // Add disable hover effect for pending cards
+      document.querySelectorAll('.category-card:not(.active)').forEach((card) => {
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
+          showTemporaryMessage('🧠 Neural pathway not yet calibrated');
+        });
+      });
+    }
+  
+    function handleCardHover(card, isHovering) {
+      const icon = card.querySelector('.category-icon');
+      if (icon) {
+        icon.style.transform = isHovering 
+          ? 'rotate(8deg) scale(1.1)' 
+          : 'rotate(0) scale(1)';
       }
     }
-
-    html += `
-    <a href="${quiz.status === "active" ? quiz.href : "#"}" 
-       class="quiz-box ${quiz.status !== "active" ? "coming-soon" : ""}"
-       aria-label="${quiz.title} quiz">
-        <h2>${quiz.title}</h2>
-        <p>${quiz.tagline}</p>
-        ${
-          quiz.status === "active" && audioSupportText
-            ? `<div class="audio-support-overlay">${audioSupportText}</div>`
-            : ""
-        }
-    </a>
-  `;
-  }
-
-  container.innerHTML = html;
-  initializeQuizInteractions();
-}
-
-function initializeQuizInteractions() {
-  document.querySelectorAll(".quiz-box").forEach((box) => {
-    if (box.classList.contains("coming-soon")) {
-      box.addEventListener("click", (e) => e.preventDefault());
+  
+    function showTemporaryMessage(message) {
+      const msg = document.createElement('div');
+      msg.className = 'system-alert';
+      msg.textContent = message;
+      document.body.appendChild(msg);
+      setTimeout(() => msg.remove(), 2000);
     }
-
-    box.addEventListener("touchstart", handleTouchStart);
-    box.addEventListener("touchend", handleTouchEnd);
+  
+    function showErrorState(error) {
+      container.innerHTML = `
+        <div class="error-state">
+          <div class="error-icon">⚠️</div>
+          <h3 class="error-title">Memory Retrieval Failure</h3>
+          <p class="error-details">${error.message}</p>
+          <button class="retry-btn" onclick="location.reload()">
+            Retry Connection
+          </button>
+        </div>
+      `;
+    }
   });
-}
-
-const handleTouchStart = (e) => {
-  if (!e.target.classList.contains("coming-soon")) {
-    e.target.classList.add("active");
-  }
-};
-
-const handleTouchEnd = (e) => {
-  e.target.classList.remove("active");
-};
-
-// Loading handler
-window.addEventListener("load", () => {
-  loadQuizzes().finally(() => {
-    setTimeout(() => {
-      document.getElementById("loading-overlay").style.opacity = "0";
-      setTimeout(() => {
-        document.getElementById("loading-overlay").style.display = "none";
-      }, 500);
-    }, 1000);
-  });
-});

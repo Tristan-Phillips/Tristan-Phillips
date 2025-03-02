@@ -1,13 +1,388 @@
 {
-  "quizzes": [
+  "categories": [
     {
-      "id": "dva1501",
-      "title": "UNISA | 90180 | DVA1501",
-      "tagline": "Introduction to Development Studies",
-      "href": "topic/dva1501/quiz.html",
-      "status": "active",
-      "audioSupport": "none",
-      "lastUpdated": "2025-02-25"
+      "id": "unisa",
+      "title": "UNISA Qualifications",
+      "description": "University of South Africa course resources",
+      "icon": "🎓",
+      "href": "/quiz/topics/unisa/topics.html",
+      "status": "active"
+    },
+    {
+      "id": "mycology",
+      "title": "Mycology",
+      "description": "The study of fungi",
+      "icon": "🍄",
+      "href": "/quiz/topics/mycology/topics.html",
+      "status": "active"
+    },
+    {
+      "id": "neuroscience",
+      "title": "Neuroscience",
+      "description": "The study of the nervous system",
+      "icon": "🧠",
+      "href": "/quiz/topics/neuroscience/topics.html",
+      "status": "pending"
+    },
+    {
+      "id": "pharmacology",
+      "title": "Pharmacology",
+      "description": "The study of drugs",
+      "icon": "💊",
+      "href": "/quiz/topics/pharmacology/topics.html",
+      "status": "pending"
+    },
+    {
+      "id": "philosophy",
+      "title": "Philosophy",
+      "description": "The study of the fundamental nature of knowledge, reality, and existence",
+      "icon": "🤔",
+      "href": "/quiz/topics/philosophy/topics.html",
+      "status": "pending"
+    },
+    {
+      "id": "astronomy",
+      "title": "Astronomy",
+      "description": "The study of celestial objects",
+      "icon": "🌌",
+      "href": "/quiz/topics/astronomy/topics.html",
+      "status": "pending"
+    },
+    {
+      "id": "computerscience",
+      "title": "Computer Science",
+      "description": "The study of computers and computational systems",
+      "icon": "💻",
+      "href": "/quiz/topics/computerscience/topics.html",
+      "status": "pending"
+    },
+    {
+      "id": "psychology",
+      "title": "Psychology",
+      "description": "The study of the mind and behavior",
+      "icon": "🗣️",
+      "href": "/quiz/topics/psychology/topics.html",
+      "status": "pending"
     }
-  ]
+  ],
+  "unisa": {
+    "topics": [
+      {
+        "code": "90180",
+        "title": "Bachelor of Arts in Psychology",
+        "status": "active",
+        "courses": [
+          {
+            "id": "afl1501",
+            "code": "AFL1501",
+            "title": "Language Through an African Lens",
+            "href": "/quiz/topics/unisa/90180/afl1501/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "pyc1511",
+            "code": "PYC1511",
+            "title": "Introduction to Psychology",
+            "href": "/quiz/topics/unisa/90180/pyc1511/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "pyc1512",
+            "code": "PYC1512",
+            "title": "Foundations of Sub-Disciplines of Psychology",
+            "href": "/quiz/topics/unisa/90180/pyc1512/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "pyc1513",
+            "code": "PYC1513",
+            "title": "Introduction to Psychological Intervention Perspectives",
+            "href": "/quiz/topics/unisa/90180/pyc1513/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "apy1501",
+            "code": "APY1501",
+            "title": "Anthropology in a Diverse World",
+            "href": "/quiz/topics/unisa/90180/apy1501/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "bth1501",
+            "code": "BTH1501",
+            "title": "Invitation to Theology",
+            "href": "/quiz/topics/unisa/90180/bth1501/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "cmy1501",
+            "code": "CMY1501",
+            "title": "Introduction to Criminology: Crime, Offenders and Criminal Behavior",
+            "href": "/quiz/topics/unisa/90180/cmy1501/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "cmy1502",
+            "code": "CMY1502",
+            "title": "Introduction to Criminology: Victims and Reduction of Crime",
+            "href": "/quiz/topics/unisa/90180/cmy1502/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "cmy1503",
+            "code": "CMY1503",
+            "title": "Introduction to Criminology: Reaction to Crime",
+            "href": "/quiz/topics/unisa/90180/cmy1503/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "com1511",
+            "code": "COM1511",
+            "title": "Principles of Decolonial Communication",
+            "href": "/quiz/topics/unisa/90180/com1511/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "com1512",
+            "code": "COM1512",
+            "title": "Disruption and Communication",
+            "href": "/quiz/topics/unisa/90180/com1512/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "dva1501",
+            "code": "DVA1501",
+            "title": "Introduction to Development Studies",
+            "href": "/quiz/topics/unisa/90180/dva1501/quiz.html",
+            "status": "active",
+            "audioSupport": "none",
+            "lastUpdated": "2025-02-26"
+          },
+          {
+            "id": "dva1502",
+            "code": "DVA1502",
+            "title": "Development Problems and Institutions",
+            "href": "/quiz/topics/unisa/90180/dva1502/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "pls1501",
+            "code": "PLS1501",
+            "title": "Introduction to Western Philosophy",
+            "href": "/quiz/topics/unisa/90180/pls1501/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "pls1502",
+            "code": "PLS1502",
+            "title": "Introduction to African Philosophy",
+            "href": "/quiz/topics/unisa/90180/pls1502/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          },
+          {
+            "id": "the1502",
+            "code": "THE1502",
+            "title": "Introduction to Ethics",
+            "href": "/quiz/topics/unisa/90180/the1502/quiz.html",
+            "status": "coming_soon",
+            "audioSupport": "none"
+          }
+        ]
+      },
+      {
+        "code": "98906",
+        "title": "Bachelor of Science",
+        "status": "coming_soon",
+        "courses": [
+          {
+            "id": "cos1501",
+            "code": "COS1501",
+            "title": "Theoretical Computer Science",
+            "href": "/quiz/topic/cos1501/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "mycology": {
+    "topics": [
+      {
+        "code": "fung101",
+        "title": "Introduction to Mycology",
+        "status": "active",
+        "courses": [
+          {
+            "id": "ediblevtoxic",
+            "code": "MYC1001",
+            "title": "Edible vs Toxic",
+            "href": "/quiz/topics/mycology/ediblevtoxic/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "neuroscience": {
+    "topics": [
+      {
+        "code": "neuro101",
+        "title": "Basics of Neuroscience",
+        "status": "active",
+        "courses": [
+          {
+            "id": "neurotransmitters",
+            "code": "NEU1001",
+            "title": "Neurochemical Pathways",
+            "href": "/quiz/topics/neuroscience/neurotransmitters/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          },
+          {
+            "id": "brainmapping",
+            "code": "NEU1002",
+            "title": "Brain Region Functions",
+            "href": "/quiz/topics/neuroscience/brainmapping/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "pharmacology": {
+    "topics": [
+      {
+        "code": "pharma101",
+        "title": "Introduction to Pharmacology",
+        "status": "active",
+        "courses": [
+          {
+            "id": "drugactions",
+            "code": "PHM1001",
+            "title": "Drug-Receptor Interactions",
+            "href": "/quiz/topics/pharmacology/drugactions/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          },
+          {
+            "id": "neuropharma",
+            "code": "PHM1002",
+            "title": "Psychoactive Compounds",
+            "href": "/quiz/topics/pharmacology/neuropharma/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "philosophy": {
+    "topics": [
+      {
+        "code": "phil101",
+        "title": "Philosophical Studies",
+        "status": "active",
+        "courses": [
+          {
+            "id": "mindbody",
+            "code": "PHI1001",
+            "title": "Mind-Body Problem",
+            "href": "/quiz/topics/philosophy/mindbody/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "astronomy": {
+    "topics": [
+      {
+        "code": "astro101",
+        "title": "Introduction to Astronomy",
+        "status": "active",
+        "courses": [
+          {
+            "id": "exoplanets",
+            "code": "AST1001",
+            "title": "Exoplanet Discovery Methods",
+            "href": "/quiz/topics/astronomy/exoplanets/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "computerscience": {
+    "topics": [
+      {
+        "code": "cs101",
+        "title": "Foundations of Computer Science",
+        "status": "active",
+        "courses": [
+          {
+            "id": "algorithms",
+            "code": "CS1001",
+            "title": "Algorithm Complexity Analysis",
+            "href": "/quiz/topics/computerscience/algorithms/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          },
+          {
+            "id": "linuxsys",
+            "code": "CS1002",
+            "title": "Linux Systems Administration",
+            "href": "/quiz/topics/computerscience/linuxsys/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "psychology": {
+    "topics": [
+      {
+        "code": "psych101",
+        "title": "Psychological Foundations",
+        "status": "active",
+        "courses": [
+          {
+            "id": "cognitivebias",
+            "code": "PSY1001",
+            "title": "Cognitive Biases in Tech",
+            "href": "/quiz/topics/psychology/cognitivebias/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          },
+          {
+            "id": "neurodivergence",
+            "code": "PSY1002",
+            "title": "Neurodiversity Spectrum",
+            "href": "/quiz/topics/psychology/neurodivergence/quiz.html",
+            "status": "active",
+            "audioSupport": "none"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -1,7 +1,22 @@
 {
   "quizzes": {
     "dva1501": {
-        "title": "🗣️ DVA1501 👂"
+        "title": "DVA1501"
+      },
+      "pls1501": {
+        "title": "PLS1501"
+      },
+      "pyc1511": {
+        "title": "PYC1511"
+      },
+      "pyc1512": {
+        "title": "PYC1512"
+      },
+      "pyc1513": {
+        "title": "PYC1513"
+      },
+      "ediblevtoxic": {
+        "title": "MYC1001"
       }
   },
   "buttonLabels": {
@@ -11,7 +26,7 @@
     "pauseQuiz": "⏸ Pause"
   },
   "textDefaults": {
-    "titleText": "NerdQuiz.Fun",
+    "titleText": "TRAP.LOL | Quiz'z",
     "loadingText": "Preparing quiz...",
     "returnHome": "🏠",
     "restartQuiz": "🔄",

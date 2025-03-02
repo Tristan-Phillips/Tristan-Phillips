@@ -5,6 +5,8 @@
     --background: #1a1a1a;
     --text-dark: #3d352b;
     --border: rgba(174, 0, 1, 0.2);
+    --accent-500: #ff715b;
+    --base-50: #f8fbfd;
 }
 
 body {

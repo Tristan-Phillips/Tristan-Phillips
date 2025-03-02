@@ -15,11 +15,11 @@ class Quiz {
     this.timePerRound = 30;
     this.localization = {};
 
-    // Get quiz name from URL path
-    const pathParts = window.location.pathname.split('/topic/');
-    this.quizName = pathParts.length > 1 
-      ? pathParts[1].split('/')[0] 
-      : 'defaultQuizName';
+    // Get quiz path from current URL
+    const quizPath = window.location.pathname.split('/quiz.html')[0];
+    this.basePath = `${quizPath}/public`;
+    const pathSegments = quizPath.split('/').filter(seg => seg);
+    this.topic = pathSegments[pathSegments.length - 1];
 
     // Bind event handlers
     this.handleKeyPress = this.handleKeyPress.bind(this);
@@ -51,7 +51,7 @@ class Quiz {
   }
 
   async loadQuestions() {
-    const response = await fetch(`/quiz/topic/${this.quizName}/public/data/questions.json`);
+    const response = await fetch(`${this.basePath}/data/questions.json`);
     if (!response.ok) throw new Error("Failed to load questions");
     this.questions = await response.json();
   }
@@ -69,7 +69,7 @@ class Quiz {
   }
 
   updateLocalizedElements() {
-    document.title = this.localize('textDefaults.titleText', 'NerdQuiz.Fun');
+    document.title = this.localize('textDefaults.titleText', 'Quiz');
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
@@ -77,9 +77,9 @@ class Quiz {
       if (text) element.textContent = text;
     });
 
-    const quizTitleKey = `quizzes.${this.quizName}.title`;
+    const quizTitleKey = `quizzes.${this.topic}.title`;
     const quizTitle = this.localize(quizTitleKey, 
-      `${this.quizName.replace(/([A-Z])/g, ' $1').trim()} Quiz`);
+      `${this.topic.toUpperCase()}`);
 
     document.querySelectorAll('.quiz-title').forEach(el => {
       el.textContent = quizTitle;
@@ -169,12 +169,12 @@ class Quiz {
     document.getElementById("answer-text").textContent = this.currentQuestion.answer;
     const sourceLink = document.getElementById("source-link");
 
-    // Enhanced source link handling
-    const validSource = this.currentQuestion.httpsource &&
-                      this.currentQuestion.httpsource !== "#" &&
-                      this.currentQuestion.httpsource !== "";
+    // Source link handling
+    const validSource = this.currentQuestion.source &&
+                      this.currentQuestion.source !== "#" &&
+                      this.currentQuestion.source !== "";
 
-    sourceLink.href = validSource ? this.currentQuestion.httpsource : "#";
+    sourceLink.href = validSource ? this.currentQuestion.source : "#";
     sourceLink.style.display = validSource ? "inline-block" : "none";
 
     document.getElementById("answer-box").classList.remove("hidden");
@@ -189,18 +189,22 @@ class Quiz {
 
   playQuestionAudio() {
     this.stopAudio();
-    this.currentAudio = new Audio(
-      `/quiz/topic/${this.quizName}/public/audio/questions/${this.currentQuestion.id}.mp3`
-    );
-    this.currentAudio.play().catch(console.error);
+    if (this.currentQuestion.audio) {
+      this.currentAudio = new Audio(
+        `${this.basePath}/audio/questions/${this.currentQuestion.audio}`
+      );
+      this.currentAudio.play().catch(console.error);
+    }
   }
 
   playAnswerAudio() {
     this.stopAudio();
-    this.currentAudio = new Audio(
-      `/quiz/topic/${this.quizName}/public/audio/answers/${this.currentQuestion.id}.mp3`
-    );
-    this.currentAudio.play().catch(console.error);
+    if (this.currentQuestion.answerAudio) {
+      this.currentAudio = new Audio(
+        `${this.basePath}/audio/answers/${this.currentQuestion.answerAudio}`
+      );
+      this.currentAudio.play().catch(console.error);
+    }
   }
 
   stopAudio() {
