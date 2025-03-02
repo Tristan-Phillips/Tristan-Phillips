@@ -11,7 +11,7 @@
     {
       "id": "mycology",
       "title": "Mycology",
-      "description": "The study of fungi",
+      "description": "Earth's OG network engineers",
       "icon": "🍄",
       "href": "/quiz/topics/mycology/topics.html",
       "status": "active"
@@ -19,7 +19,7 @@
     {
       "id": "neuroscience",
       "title": "Neuroscience",
-      "description": "The study of the nervous system",
+      "description": "Brain spaghetti code reverse-engineering",
       "icon": "🧠",
       "href": "/quiz/topics/neuroscience/topics.html",
       "status": "pending"
@@ -27,7 +27,7 @@
     {
       "id": "pharmacology",
       "title": "Pharmacology",
-      "description": "The study of drugs",
+      "description": "Biochemical locksmith (occasional alarms)",
       "icon": "💊",
       "href": "/quiz/topics/pharmacology/topics.html",
       "status": "pending"
@@ -35,7 +35,7 @@
     {
       "id": "philosophy",
       "title": "Philosophy",
-      "description": "The study of the fundamental nature of knowledge, reality, and existence",
+      "description": "Reality's undocumented APIs",
       "icon": "🤔",
       "href": "/quiz/topics/philosophy/topics.html",
       "status": "pending"
@@ -43,7 +43,7 @@
     {
       "id": "astronomy",
       "title": "Astronomy",
-      "description": "The study of celestial objects",
+      "description": "Why dark matter ghosts us",
       "icon": "🌌",
       "href": "/quiz/topics/astronomy/topics.html",
       "status": "pending"
@@ -51,7 +51,7 @@
     {
       "id": "computerscience",
       "title": "Computer Science",
-      "description": "The study of computers and computational systems",
+      "description": "Screaming into the digital void",
       "icon": "💻",
       "href": "/quiz/topics/computerscience/topics.html",
       "status": "pending"
@@ -59,7 +59,7 @@
     {
       "id": "psychology",
       "title": "Psychology",
-      "description": "The study of the mind and behavior",
+      "description": "Human.exe debugger",
       "icon": "🗣️",
       "href": "/quiz/topics/psychology/topics.html",
       "status": "pending"
