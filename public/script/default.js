@@ -179,6 +179,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             url: "https://github.com/Tristan-Phillips/mutualcombat.xyz",
             website: "https://mutualcombat.xyz",
             languages: ["Basic Web Stack", "PostgreSQL"]
+        },
+        {
+            name: "PersonalFootprint.Online",
+            status: "concept",
+            description: "Document your online footprint",
+            url: "https://github.com/Tristan-Phillips/personalfootprint.online",
+            website: "https://personalfootprint.online/",
+            languages: ["JavaScript", "CSS", "HTML"]
         }
     ];
 
