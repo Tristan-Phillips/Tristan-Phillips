@@ -150,6 +150,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const PROJECTS = [
         {
             name: "Timeline.Forum",
+            status: "concept",
             description: "Discuss events in chronological order",
             url: "https://github.com/Tristan-Phillips/timeline",
             website: "https://timeline.forum",
@@ -157,6 +158,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         },
         {
             name: "Nerdquiz.Fun",
+            status: "beta",
             description: "A quiz site with no bullshit",
             url: "https://github.com/Tristan-Phillips/nerdquiz.fun",
             website: "https://nerdquiz.fun",
@@ -164,10 +166,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         },
         {
             name: "Paintedd.art",
-            description: "A full site for my mothers art",
+            status: "concept",
+            description: "A full site for art",
             url: "https://github.com/Tristan-Phillips/Paintedd.art",
             website: "https://paintedd.art",
             languages: ["JavaScript", "CSS", "HTML"]
+        },
+        {
+            name: "MutualCombat.xyz",
+            status: "concept",
+            description: "Where consent to throw hands is just a swipe away",
+            url: "https://github.com/Tristan-Phillips/mutualcombat.xyz",
+            website: "https://mutualcombat.xyz",
+            languages: ["Basic Web Stack", "PostgreSQL"]
         }
     ];
 
@@ -194,16 +205,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         try {
             const projectGrid = document.getElementById('github-projects');
             projectGrid.innerHTML = '';
-
+    
             PROJECTS.forEach(project => {
                 const card = document.createElement('div');
-                card.className = 'project-card';
-
+                card.className = `project-card ${project.status}`; // Add status class
+    
+                const statusLabel = {
+                    concept: '🚧 Concept',
+                    beta: '🔧 Beta',
+                    alpha: '⚠️ Alpha',
+                    live: '🚀 Live'
+                }[project.status] || '🗺️ Planning';
+    
                 const languages = project.languages
                     .map(lang => `<span class="tech-pill">${lang}</span>`)
                     .join('');
-
+    
                 card.innerHTML = `
+                    <div class="project-status ${project.status}">
+                        ${statusLabel}
+                    </div>
                     <h3>${project.name}</h3>
                     ${project.description ? `<p>${project.description}</p>` : ''}
                     <div class="tech-list">${languages}</div>
@@ -218,7 +239,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         </a>
                     </div>
                 `;
-
+    
                 card.style.animation = 'fadeIn 0.5s ease';
                 projectGrid.appendChild(card);
             });
