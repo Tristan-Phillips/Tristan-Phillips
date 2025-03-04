@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     },
     {
       name: "PersonalFootprint.Online",
-      status: "beta",
+      status: "alpha",
       description: "Document your online footprint",
       url: "https://github.com/Tristan-Phillips/personalfootprint.online",
       website: "https://personalfootprint.online/",
