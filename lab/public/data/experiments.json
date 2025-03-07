@@ -1,76 +1,94 @@
 {
-    "experiments": [
-        {
-            "title": "LINK | Paintedd Socials",
-            "description": "@Painted_d quick link social dashboard",
-            "status": "live",
-            "tags": ["hyperlink"],
-            "tech": ["JavaScript", "CSS", "HTML"],
-            "demoUrl": "https://me.paintedd.art/",
-            "repoUrl": "https://github.com/Tristan-Phillips/Me.Paintedd.Art"
-        },
-        {
-            "title": "LINK | Link Dashboard",
-            "description": "My quick link web dashboard",
-            "status": "live",
-            "tags": ["hyperlink"],
-            "tech": ["JavaScript", "CSS", "HTML"],
-            "demoUrl": "https://dash.trap.lol/",
-            "repoUrl": "https://github.com/Tristan-Phillips/dash"
-        },
-        {
-            "title": "WEB | RNG Pixel Art",
-            "description": "A random pixel art generator 16x16",
-            "status": "live",
-            "tags": ["web"],
-            "tech": ["JavaScript", "CSS", "HTML"],
-            "demoUrl": "web/tools/rngpixelgenerator.html",
-            "repoUrl": "https://codepen.io/tristan-phillips/pen/zYVmywX"
-        }, 
-        {
-            "title": "ECON | Paintedd Pennies",
-            "description": "🎨Earn imaginary currency to tilt reality🔥",
-            "status": "pilot",
-            "tags": ["economy"],
-            "tech": ["JavaScript", "CSS", "HTML"],
-            "demoUrl": "economy/painteddpennies/index.html",
-            "repoUrl": "#"
-        },
-        {
-            "title": "TEXT | Lag",
-            "description": "A simple text overlay that displays the text 'Stream might be Laggy'",
-            "status": "scratch",
-            "tags": ["overlay"],
-            "tech": ["CSS", "HTML"],
-            "demoUrl": "overlay/text/lag.html",
-            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/lag.html"
-        },
-        {
-            "title": "TEXT | No",
-            "description": "A simple text overlay that displays the text 'No'",
-            "status": "scratch",
-            "tags": ["overlay"],
-            "tech": ["CSS", "HTML"],
-            "demoUrl": "overlay/text/no.html",
-            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/no.html"
-        },
-        {
-            "title": "TEXT | Noob",
-            "description": "A simple text overlay that displays the text 'I AM NOOB' in timed intervals",
-            "status": "scratch",
-            "tags": ["overlay"],
-            "tech": ["JavaScript", "CSS", "HTML"],
-            "demoUrl": "overlay/text/noob.html",
-            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/noob.html"
-        },
-        {
-            "title": "LINK | Paintedd Live Switcher",
-            "description": "@Painted_d Top Liker and Top Gifter for current live switcher (TikTok)",
-            "status": "scratch",
-            "tags": ["overlay"],
-            "tech": ["JavaScript", "CSS", "HTML"],
-            "demoUrl": "overlay/paintedd/giftlikeswitch.html",
-            "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/paintedd/giftlikeswitch.html"
-        }
-    ]
+  "experiments": [
+    {
+      "title": "LINK | Paintedd Socials",
+      "description": "@Painted_d quick link social dashboard",
+      "status": "live",
+      "tags": ["hyperlink"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "https://me.paintedd.art/",
+      "repoUrl": "https://github.com/Tristan-Phillips/Me.Paintedd.Art"
+    },
+    {
+      "title": "LINK | Link Dashboard",
+      "description": "My quick link web dashboard",
+      "status": "live",
+      "tags": ["hyperlink"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "https://dash.trap.lol/",
+      "repoUrl": "https://github.com/Tristan-Phillips/dash"
+    },
+    {
+      "title": "WEB | RNG Pixel Art",
+      "description": "A random pixel art generator 16x16",
+      "status": "live",
+      "tags": ["web"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "web/tools/rngpixelgenerator.html",
+      "repoUrl": "https://codepen.io/tristan-phillips/pen/zYVmywX"
+    },
+    {
+      "title": "ECON | Paintedd Pennies",
+      "description": "🎨Earn imaginary currency to tilt reality🔥",
+      "status": "pilot",
+      "tags": ["economy"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "economy/painteddpennies/index.html",
+      "repoUrl": "#"
+    },
+    {
+      "title": "TEXT | Lag",
+      "description": "A simple text overlay that displays the text 'Stream might be Laggy'",
+      "status": "scratch",
+      "tags": ["overlay"],
+      "tech": ["CSS", "HTML"],
+      "demoUrl": "overlay/text/lag.html",
+      "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/lag.html"
+    },
+    {
+      "title": "TEXT | No",
+      "description": "A simple text overlay that displays the text 'No'",
+      "status": "scratch",
+      "tags": ["overlay"],
+      "tech": ["CSS", "HTML"],
+      "demoUrl": "overlay/text/no.html",
+      "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/no.html"
+    },
+    {
+      "title": "TEXT | Noob",
+      "description": "A simple text overlay that displays the text 'I AM NOOB' in timed intervals",
+      "status": "scratch",
+      "tags": ["overlay"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "overlay/text/noob.html",
+      "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/text/noob.html"
+    },
+    {
+      "title": "WEB | Mutual Combat Tinder Alternative",
+      "description": "Where consent to throw hands is just a swipe away",
+      "status": "concept",
+      "tags": ["website"],
+      "tech": ["Basic Web Stack", "PostgreSQL"],
+      "demoUrl": "https://mutualcombat.xyz",
+      "repoUrl": "https://github.com/Tristan-Phillips/mutualcombat.xyz"
+    },
+    {
+      "title": "WEB | Personal Footprint",
+      "description": "Document your online footprint",
+      "status": "concept",
+      "tags": ["web"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "https://personalfootprint.online/",
+      "repoUrl": "https://github.com/Tristan-Phillips/personalfootprint.online"
+    },
+    {
+      "title": "LINK | Paintedd Live Switcher",
+      "description": "@Painted_d Top Liker and Top Gifter for current live switcher (TikTok)",
+      "status": "concept",
+      "tags": ["web"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "overlay/paintedd/giftlikeswitch.html",
+      "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/paintedd/giftlikeswitch.html"
+    }
+  ]
 }

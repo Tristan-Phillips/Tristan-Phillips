@@ -178,22 +178,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       website: "https://paintedd.art",
       languages: ["JavaScript", "CSS", "HTML"],
     },
-    {
-      name: "MutualCombat.xyz",
-      status: "concept",
-      description: "Where consent to throw hands is just a swipe away",
-      url: "https://github.com/Tristan-Phillips/mutualcombat.xyz",
-      website: "https://mutualcombat.xyz",
-      languages: ["Basic Web Stack", "PostgreSQL"],
-    },
-    {
-      name: "PersonalFootprint.Online",
-      status: "alpha",
-      description: "Document your online footprint",
-      url: "https://github.com/Tristan-Phillips/personalfootprint.online",
-      website: "https://personalfootprint.online/",
-      languages: ["JavaScript", "CSS", "HTML"],
-    },
   ];
 
   // Live Projects Configuration
