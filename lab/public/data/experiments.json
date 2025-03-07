@@ -28,6 +28,15 @@
       "repoUrl": "https://codepen.io/tristan-phillips/pen/zYVmywX"
     },
     {
+      "title": "WEB | Your IP",
+      "description": "Displays your IP",
+      "status": "live",
+      "tags": ["web"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "web/tools/ip.html",
+      "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/web/tools/ip.html"
+    },
+    {
       "title": "ECON | Paintedd Pennies",
       "description": "🎨Earn imaginary currency to tilt reality🔥",
       "status": "pilot",
