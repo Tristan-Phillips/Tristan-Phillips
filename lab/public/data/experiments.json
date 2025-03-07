@@ -67,7 +67,7 @@
       "title": "WEB | Mutual Combat Tinder Alternative",
       "description": "Where consent to throw hands is just a swipe away",
       "status": "concept",
-      "tags": ["website"],
+      "tags": ["web"],
       "tech": ["Basic Web Stack", "PostgreSQL"],
       "demoUrl": "https://mutualcombat.xyz",
       "repoUrl": "https://github.com/Tristan-Phillips/mutualcombat.xyz"
@@ -84,8 +84,8 @@
     {
       "title": "LINK | Paintedd Live Switcher",
       "description": "@Painted_d Top Liker and Top Gifter for current live switcher (TikTok)",
-      "status": "concept",
-      "tags": ["web"],
+      "status": "scratch",
+      "tags": ["overlay"],
       "tech": ["JavaScript", "CSS", "HTML"],
       "demoUrl": "overlay/paintedd/giftlikeswitch.html",
       "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/paintedd/giftlikeswitch.html"
