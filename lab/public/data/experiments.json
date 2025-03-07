@@ -98,6 +98,15 @@
       "tech": ["JavaScript", "CSS", "HTML"],
       "demoUrl": "overlay/paintedd/giftlikeswitch.html",
       "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/overlay/paintedd/giftlikeswitch.html"
+    },
+    {
+      "title": "SIM | Panic Attack",
+      "description": "A panic attack simulator",
+      "status": "alpha",
+      "tags": ["sim"],
+      "tech": ["JavaScript", "CSS", "HTML"],
+      "demoUrl": "simulator/panic.html",
+      "repoUrl": "https://github.com/Tristan-Phillips/Tristan-Phillips/blob/main/lab/simulator/panic.html"
     }
   ]
 }
