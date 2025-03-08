@@ -2,61 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panic Attack Simulator</title>
     <style>
+      :root {
+        --primary-color: #4caf50;
+        --warning-bg: #f8f9fa;
+        --transition-duration: 0.3s;
+      }
+
       body {
         margin: 0;
         overflow: hidden;
-        background: rgba(255, 255, 255, 1);
-        transition: background-color 5s;
-        font-family: Arial, sans-serif;
+        background: #ffffff;
+        transition: background-color 5s ease;
+        font-family: system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
       }
+
       #warning {
-        padding: 50px;
+        padding: 2rem;
         text-align: center;
+        max-width: 600px;
+        margin: 2rem auto;
+        background: var(--warning-bg);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
-      @keyframes appear {
-        0% {
-          opacity: 0;
-          transform: scale(0.8);
-        }
-        100% {
-          opacity: 0.7;
-          transform: scale(1);
-        }
+
+      .button {
+        padding: 0.8rem 1.6rem;
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform var(--transition-duration) ease,
+          background-color var(--transition-duration) ease;
+        font-size: 1rem;
       }
-      @keyframes fadeOut {
-        0% {
-          opacity: 0.7;
-        }
-        100% {
-          opacity: 0;
-        }
+
+      .button:hover {
+        background: #45a049;
+        transform: translateY(-1px);
       }
+
+      .button:active {
+        transform: translateY(0);
+      }
+
+      .button:focus {
+        outline: 2px solid rgba(76, 175, 80, 0.5);
+      }
+
       .thought {
         position: absolute;
         pointer-events: none;
         opacity: 0;
+        max-width: min(200px, 30vw);
+        word-wrap: break-word;
+        padding: 0.5rem;
+        border-radius: 4px;
         animation: appear 1.5s ease-out forwards,
           fadeOut 5s ease-out 3s forwards;
-        max-width: 200px;
-        word-wrap: break-word;
-        padding: 8px;
-        border-radius: 4px;
       }
+
       .overlay {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        inset: 0;
         pointer-events: none;
         opacity: 0;
-        transition: all 2s;
+        transition: opacity 2s ease;
       }
+
       #vignette {
         box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
       }
+
       #pulse {
         background: radial-gradient(
           circle,
@@ -65,27 +87,28 @@
         );
         animation: pulse 2s ease-in-out infinite;
       }
-      @keyframes pulse {
-        0% {
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 0.7;
           transform: scale(1);
         }
+      }
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+        }
+      }
+
+      @keyframes pulse {
         50% {
           transform: scale(1.02);
         }
-        100% {
-          transform: scale(1);
-        }
-      }
-      button {
-        padding: 10px 20px;
-        background: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      button:hover {
-        background: #45a049;
       }
     </style>
   </head>
@@ -93,233 +116,249 @@
     <div id="warning">
       <h2>⚠️ Panic Attack Simulator</h2>
       <p>
-        This educational tool demonstrates common experiences during anxiety
-        episodes.<br />
-        <button onclick="startExperience()">
-          I Understand - Begin Simulation
+        This educational demonstration simulates aspects of anxiety episodes.<br />
+        <button class="button" onclick="startExperience()">
+          I Understand - Begin Simulation (60s)
         </button>
       </p>
       <p>
-        <small>Note: This is not a clinical tool.</small>
-        <br />
-        <small>Duration: 1 minute.</small>
+        <small>Note: This is not a clinical tool. Use with caution.</small>
       </p>
     </div>
 
-    <div id="experience" style="display: none">
+    <div id="experience" aria-live="polite" style="display: none">
       <div class="overlay" id="vignette"></div>
       <div class="overlay" id="pulse"></div>
     </div>
 
     <script>
-      let currentDelay = 2500;
-      const minDelay = 300;
-      let intensity = 1;
-      let timeoutId;
-      let isRunning = false;
-      const maxThoughts = 100;
+      (() => {
+        const config = {
+          startDelay: 2500,
+          minDelay: 300,
+          maxThoughts: 100,
+          duration: 60000,
+          intensityStep: 0.5,
+        };
 
-      const thoughts = [
-        "What if...",
-        "I can't",
-        "Danger",
-        "Help",
-        "Can't breathe",
-        "Why me?",
-        "Stop now",
-        "Too much",
-        "Losing control",
-        "Trapped",
-        "Heart racing",
-        "Going to die",
-        "Can't think",
-        "Nobody understands",
-        "Not safe",
-        "Something's wrong",
-        "Can't escape",
-        "Why now?",
-        "Body failing",
-        "Going crazy",
-        "Embarrassing",
-        "Never ends",
-        "Alone",
-        "Weak",
-        "Why panic?",
-        "Overwhelmed",
-        "Can't focus",
-        "Not real",
-        "Fake it",
-        "Judged",
-        "Numb",
-        "Shaking",
-        "Chest hurts",
-        "Dizzy",
-        "Suffocating",
-        "Tunnel vision",
-        "Fading",
-        "Make it stop",
-        "Going to faint",
-        "Out of control",
-        "I'm trapped",
-        "No way out",
-        "Not again",
-        "Can't handle this",
-        "This is it",
-        "I'm losing it",
-        "Can't stop shaking",
-        "Please help me",
-        "What's happening?",
-        "I'm so scared",
-        "It's all too much",
-        "Can't move",
-        "I'm helpless",
-        "Why can't I calm down?",
-        "Everything's spinning",
-        "Heart won't slow down",
-        "Feel so unreal",
-        "Don't want to be here",
-        "I'm breaking down",
-        "Can't take deep breaths",
-        "Need to run",
-        "Everyone's staring",
-        "Feel so small",
-        "Mind won't stop racing",
-        "Everything's wrong",
-        "Can't find peace",
-        "My mind's a mess",
-        "I can't cope",
-        "Feel claustrophobic",
-        "Need to escape",
-        "I'm going to collapse",
-        "No one can help",
-        "Why can't I be normal?",
-        "I'm so tired of this",
-        "Why can't this stop?",
-        "Can't function",
-        "World closing in",
-        "Can't trust myself",
-        "Losing my grip",
-        "Nothing helps",
-        "I'm defective",
-        "Can't sit still",
-        "Mind is foggy",
-        "Going to vomit",
-        "Can't swallow",
-        "Limbs heavy",
-        "Face is numb",
-        "Vision blurry",
-        "Ears ringing",
-        "Too hot/cold",
-        "Sweating too much",
-        "Can't speak",
-        "Voice shaking",
-        "Hands trembling",
-        "Stomach churning",
-        "Going to scream",
-        "Can't remember",
-        "Memory failing",
-        "Reality slipping",
-        "Ground shifting",
-        "Walls breathing",
-        "Sounds distorted",
-        "Colors too bright",
-        "Can't be here",
-        "Need to hide",
-        "Nowhere safe",
-        "Can't trust anyone",
-        "They all notice",
-        "Judgment coming",
-        "Life over",
-        "Future gone",
-        "Hope lost",
-        "Permanent damage",
-        "Can't wake up",
-        "Paralyzed",
-        "Infinite loop",
-        "No exit",
-        "Cycle continues",
-        "Pattern repeating",
-        "Trapped forever",
-        "Endless fear",
-        "No relief",
-        "Soul crushing",
-        "Weight unbearable",
-        "Pressure building",
-        "Breaking point",
-        "Pieces lost",
-        "Can't rebuild",
-        "Irreparable damage",
-        "Identity dissolving",
-        "Self disappearing",
-        "Void approaching",
-        "Consumed",
-        "Gone",
-        "Nothing left",
-      ];
+        let currentDelay = config.startDelay;
+        let intensity = 1;
+        let isRunning = false;
+        let startTime = 0;
+        let animationFrame;
 
-      function startExperience() {
-        document.getElementById("warning").style.display = "none";
-        document.getElementById("experience").style.display = "block";
-        isRunning = true;
+        const thoughts = [
+          "What if...",
+          "I can't",
+          "Danger",
+          "Help",
+          "Can't breathe",
+          "Why me?",
+          "Stop now",
+          "Too much",
+          "Losing control",
+          "Trapped",
+          "Heart racing",
+          "Going to die",
+          "Can't think",
+          "Nobody understands",
+          "Not safe",
+          "Something's wrong",
+          "Can't escape",
+          "Why now?",
+          "Body failing",
+          "Going crazy",
+          "Embarrassing",
+          "Never ends",
+          "Alone",
+          "Weak",
+          "Why panic?",
+          "Overwhelmed",
+          "Can't focus",
+          "Not real",
+          "Fake it",
+          "Judged",
+          "Numb",
+          "Shaking",
+          "Chest hurts",
+          "Dizzy",
+          "Suffocating",
+          "Tunnel vision",
+          "Fading",
+          "Make it stop",
+          "Going to faint",
+          "Out of control",
+          "I'm trapped",
+          "No way out",
+          "Not again",
+          "Can't handle this",
+          "This is it",
+          "I'm losing it",
+          "Can't stop shaking",
+          "Please help me",
+          "What's happening?",
+          "I'm so scared",
+          "It's all too much",
+          "Can't move",
+          "I'm helpless",
+          "Why can't I calm down?",
+          "Everything's spinning",
+          "Heart won't slow down",
+          "Feel so unreal",
+          "Don't want to be here",
+          "I'm breaking down",
+          "Can't take deep breaths",
+          "Need to run",
+          "Everyone's staring",
+          "Feel so small",
+          "Mind won't stop racing",
+          "Everything's wrong",
+          "Can't find peace",
+          "My mind's a mess",
+          "I can't cope",
+          "Feel claustrophobic",
+          "Need to escape",
+          "I'm going to collapse",
+          "No one can help",
+          "Why can't I be normal?",
+          "I'm so tired of this",
+          "Why can't this stop?",
+          "Can't function",
+          "World closing in",
+          "Can't trust myself",
+          "Losing my grip",
+          "Nothing helps",
+          "I'm defective",
+          "Can't sit still",
+          "Mind is foggy",
+          "Going to vomit",
+          "Can't swallow",
+          "Limbs heavy",
+          "Face is numb",
+          "Vision blurry",
+          "Ears ringing",
+          "Too hot/cold",
+          "Sweating too much",
+          "Can't speak",
+          "Voice shaking",
+          "Hands trembling",
+          "Stomach churning",
+          "Going to scream",
+          "Can't remember",
+          "Memory failing",
+          "Reality slipping",
+          "Ground shifting",
+          "Walls breathing",
+          "Sounds distorted",
+          "Colors too bright",
+          "Can't be here",
+          "Need to hide",
+          "Nowhere safe",
+          "Can't trust anyone",
+          "They all notice",
+          "Judgment coming",
+          "Life over",
+          "Future gone",
+          "Hope lost",
+          "Permanent damage",
+          "Can't wake up",
+          "Paralyzed",
+          "Infinite loop",
+          "No exit",
+          "Cycle continues",
+          "Pattern repeating",
+          "Trapped forever",
+          "Endless fear",
+          "No relief",
+          "Soul crushing",
+          "Weight unbearable",
+          "Pressure building",
+          "Breaking point",
+          "Pieces lost",
+          "Can't rebuild",
+          "Irreparable damage",
+          "Identity dissolving",
+          "Self disappearing",
+          "Void approaching",
+          "Consumed",
+          "Gone",
+          "Nothing left",
+        ];
 
-        document.body.style.backgroundColor = "#f0f0f0";
-        document
-          .querySelectorAll(".overlay")
-          .forEach((el) => (el.style.opacity = 1));
+        function startExperience() {
+          if (
+            isRunning ||
+            !confirm(
+              "This simulation may be intense. Are you ready to proceed?"
+            )
+          )
+            return;
 
-        scheduleThought();
-        timeoutId = setTimeout(endExperience, 60000);
-      }
+          document.getElementById("warning").style.display = "none";
+          document.getElementById("experience").style.display = "block";
+          isRunning = true;
+          startTime = Date.now();
 
-      function scheduleThought() {
-        if (!isRunning) return;
-        createThought();
-        currentDelay = Math.max(minDelay, currentDelay * 0.95);
-        setTimeout(scheduleThought, currentDelay);
-      }
+          document.body.style.backgroundColor = "#f0f0f0";
+          document
+            .querySelectorAll(".overlay")
+            .forEach((el) => (el.style.opacity = 1));
 
-      function createThought() {
-        const thought = document.createElement("div");
-        thought.className = "thought";
-        thought.textContent =
-          thoughts[Math.floor(Math.random() * thoughts.length)];
-
-        thought.style.left = `${Math.random() * 90}%`;
-        thought.style.top = `${Math.random() * 90}%`;
-        thought.style.color = `hsl(${Math.random() * 360}, 70%, ${
-          40 - intensity
-        }%)`;
-        thought.style.fontSize = `${14 + intensity}px`;
-        thought.style.transform = `rotate(${Math.random() * 10 - 5}deg)`;
-
-        document.getElementById("experience").appendChild(thought);
-
-        const allThoughts = document.getElementsByClassName("thought");
-        if (allThoughts.length > maxThoughts) {
-          allThoughts[0].remove();
+          scheduleThought();
+          setTimeout(endExperience, config.duration);
         }
-        intensity = Math.min(50, intensity + 0.5);
-      }
 
-      function endExperience() {
-        isRunning = false;
-        clearTimeout(timeoutId);
+        function scheduleThought() {
+          if (!isRunning) return;
+          createThought();
+          currentDelay = Math.max(config.minDelay, currentDelay * 0.95);
+          setTimeout(scheduleThought, currentDelay);
+        }
 
-        document.body.style.backgroundColor = "#f0fff4";
-        document
-          .querySelectorAll(".overlay")
-          .forEach((el) => (el.style.opacity = 0));
+        function createThought() {
+          const thought = document.createElement("div");
+          Object.assign(thought.style, {
+            left: `${Math.random() * 90}%`,
+            top: `${Math.random() * 90}%`,
+            color: `hsl(${Math.random() * 360}, 70%, ${40 - intensity}%)`,
+            fontSize: `${14 + intensity}px`,
+            transform: `rotate(${Math.random() * 10 - 5}deg)`,
+          });
 
-        setTimeout(() => {
-          document.getElementById("warning").style.display = "block";
-          document.getElementById("experience").innerHTML = `
-            <div class="overlay" id="vignette"></div>
-            <div class="overlay" id="pulse"></div>
-          `;
-          currentDelay = 2500;
-          intensity = 1;
-        }, 8000);
-      }
+          thought.className = "thought";
+          thought.textContent =
+            thoughts[Math.floor(Math.random() * thoughts.length)];
+          document.getElementById("experience").appendChild(thought);
+
+          const allThoughts = document.getElementsByClassName("thought");
+          if (allThoughts.length > config.maxThoughts) allThoughts[0].remove();
+
+          intensity = Math.min(50, intensity + config.intensityStep);
+        }
+
+        function endExperience() {
+          isRunning = false;
+          cancelAnimationFrame(animationFrame);
+
+          document.body.style.backgroundColor = "#f0fff4";
+          document
+            .querySelectorAll(".overlay")
+            .forEach((el) => (el.style.opacity = 0));
+
+          setTimeout(() => {
+            document.getElementById("warning").style.display = "block";
+            document.getElementById("experience").style.display = "none";
+            document.getElementById("experience").innerHTML = `
+              <div class="overlay" id="vignette"></div>
+              <div class="overlay" id="pulse"></div>
+            `;
+            currentDelay = config.startDelay;
+            intensity = 1;
+          }, 5000);
+        }
+
+        window.startExperience = startExperience;
+      })();
     </script>
   </body>
 </html>
