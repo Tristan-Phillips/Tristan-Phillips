@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     },
     {
       name: "Paintedd.art",
-      status: "concept",
+      status: "beta",
       description: "A full site for art",
       url: "https://github.com/Tristan-Phillips/Paintedd.art",
       website: "https://paintedd.art",
